@@ -3,11 +3,11 @@ title: Brooks Canon
 character: Brooks
 universe: Lawn With Care Universe
 document: Canon
-version: 1.0.0
+version: 1.1.0
 status: CANON
 author: Ronan Campos
 creative_direction: OpenAI ChatGPT
-last_update: 2026-08-06
+last_update: 2026-08-09
 ---
 
 # Brooks
@@ -358,8 +358,15 @@ a narrative reason explaining its absence.
 The hat is part of his identity.
 
 ---
+The official Yard Ranger Canada badge is part of Brooks' standard field uniform.
 
-The official ranger badge is always present.
+Its absence is permitted only when:
+
+the wardrobe logically prevents its use,
+
+the scene does not show the relevant area,
+
+or an approved story-specific wardrobe requires an alternative treatment.
 
 The notebook is almost always present.
 
@@ -369,19 +376,165 @@ The Discovery Frame appears whenever focused observation is encouraged.
 
 # Uniform
 
-The ranger uniform evolves only through officially documented wardrobe updates.
+Brooks' ranger uniform evolves only through officially documented wardrobe updates.
 
-Core identity never changes.
+Core visual identity never changes without an official canon revision.
 
-Forest green.
+Canonical elements include:
+
+Forest Green as the dominant uniform color.
 
 Gold accents.
 
-Cream badge.
+Black outdoor boots.
 
-Black boots.
+Official Lawn With Care `[L]` brand identifier.
 
-Official insignia.
+Official Yard Ranger Canada badge.
+
+Campaign hat.
+
+The complete wardrobe specification is defined in:
+
+`06-Wardrobe.md`
+
+---
+
+# Brand Identity
+
+Brooks is canonically connected to Lawn With Care.
+
+The official Lawn With Care `[L]` leaf icon is part of his approved visual identity.
+
+It may appear in controlled locations defined by the wardrobe specification, primarily:
+
+Campaign hat.
+
+Field jacket.
+
+The `[L]` icon represents:
+
+**Lawn With Care brand affiliation.**
+
+Only official Lawn With Care artwork may be used in final branded production.
+
+The icon must never be intentionally redesigned, reinterpreted or replaced by an AI-generated approximation.
+
+---
+
+# Yard Ranger Canada Badge
+
+Brooks' Yard Ranger badge is visually distinct from the Lawn With Care corporate identity.
+
+Its canonical direction includes:
+
+White or light badge field.
+
+Red maple leaf.
+
+Restrained border treatment.
+
+The red maple leaf provides a direct visual reference to Brooks' Canadian context.
+
+The badge represents:
+
+**Yard Ranger identity + Canadian context.**
+
+It does not replace the Lawn With Care `[L]` icon.
+
+Both symbols may coexist because they communicate different aspects of Brooks' identity.
+
+---
+
+# Master Visual Reference
+
+The approved Master Visual Reference for Brooks is:
+
+`Assets/Model-Sheets/Brooks-Master-Model-Sheet-v1.0.png`
+
+Asset status:
+
+`APPROVED — MASTER VISUAL REFERENCE`
+
+This asset establishes Brooks' currently approved visual implementation, including:
+
+Character proportions.
+
+Face construction.
+
+Campaign hat silhouette.
+
+Standard field uniform.
+
+General color relationships.
+
+Boots.
+
+Brand placement.
+
+Badge treatment.
+
+It must be used together with Brooks' written canon when producing official visual material.
+
+---
+
+# Visual Authority
+
+Written canon defines Brooks' identity and immutable character rules.
+
+The Master Visual Reference defines his approved visual implementation.
+
+Detailed production rules remain governed by their specialized documents, including:
+
+`05-Model-Sheet.md`
+
+`06-Wardrobe.md`
+
+`15-Design-Rules.md`
+
+The Canon should not duplicate every technical production rule.
+
+Its role is to establish which visual decisions are fundamental to Brooks' identity.
+
+---
+
+# Visual Evolution
+
+Brooks may evolve visually through controlled franchise development.
+
+However, changes to any of the following require an explicit canon decision:
+
+Campaign hat identity.
+
+Core silhouette.
+
+Primary uniform identity.
+
+Lawn With Care brand affiliation.
+
+Yard Ranger Canada badge identity.
+
+Core color relationships.
+
+Fundamental facial construction.
+
+Major character proportions.
+
+Minor improvements in rendering, materials, linework, lighting or production technique do not automatically constitute a canon change.
+
+---
+
+# AI Production Rule
+
+Generative AI is a production tool.
+
+It is not a source of canon.
+
+An AI-generated variation does not become canonical merely because it appears in an illustration.
+
+When AI output conflicts with established Brooks canon or approved reference assets, the established canon takes precedence.
+
+Official corporate artwork must be composited from approved source assets whenever exact brand reproduction is required.
 
 ---
 
@@ -541,4 +694,4 @@ He seeks to help others discover how capable they already are.
 
 Status
 
-CANON v1.0
+CANON v1.1

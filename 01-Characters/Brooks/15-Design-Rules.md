@@ -3,11 +3,11 @@ title: Brooks Design Rules
 character: Brooks
 universe: Lawn With Care Universe
 document: Design Rules
-version: 1.0.0
+version: 1.1.0
 status: CANON
 author: Ronan Campos
 creative_direction: OpenAI ChatGPT
-last_update: 2026-08-06
+last_update: 2026-08-09
 ---
 
 # Brooks
@@ -51,11 +51,12 @@ Brooks should never appear intimidating.
 Whenever Brooks appears, the visual hierarchy should reinforce:
 
 1. Face
-2. Hat
-3. Badge
+2. Campaign Hat
+3. Yard Ranger Canada Badge
 4. Hands
 5. Notebook
 6. Field Kit
+7. Lawn With Care brand identifier
 
 The audience should naturally read the character in this order.
 
@@ -121,29 +122,78 @@ Professional.
 
 # Badge
 
-The official badge is sacred.
+# Yard Ranger Canada Badge
 
-Construction:
+The official Yard Ranger Canada badge is a permanent component of Brooks' standard field identity.
 
-Cream background (#F5F4EE)
+It is visually distinct from the Lawn With Care corporate brand.
 
-Gold border (#C9A227)
+Canonical direction:
 
-Green leaf (#6DB33F)
+White or light background.
 
-Small maple leaf pin (#D85A30)
+Red maple leaf.
+
+Restrained border treatment.
+
+Clean, simple construction.
 
 Placement:
 
-Left chest.
+Brooks' chest, according to the approved wardrobe and Master Visual Reference.
 
-Always visible whenever possible.
+The badge represents:
 
-Never redesign the symbol.
+**Yard Ranger identity + Canadian context.**
 
-Never add text.
+It must never be replaced by the Lawn With Care `[L]` icon.
+
+It should remain visible whenever the wardrobe and camera angle reasonably permit it.
+
+Do not redesign the badge without an approved canon revision.
 
 ---
+
+# Lawn With Care Brand Identifier
+
+The official Lawn With Care `[L]` leaf icon is Brooks' corporate brand identifier.
+
+It represents:
+
+**Lawn With Care brand affiliation.**
+
+Approved primary applications:
+
+Campaign hat.
+
+Field jacket.
+
+Only official Lawn With Care source artwork may be used in final branded production.
+
+The icon must never be:
+
+Redrawn.
+
+Reconstructed.
+
+Mirrored.
+
+Distorted.
+
+Simplified.
+
+Reinterpreted.
+
+Replaced by an AI-generated approximation.
+
+Cropping excess transparent or empty border space is permitted.
+
+The internal artwork must remain unchanged.
+
+Branding must remain restrained.
+
+Brooks is a character first, not a walking advertisement.
+
 
 # Jacket
 
@@ -589,13 +639,17 @@ Never panic.
 
 # Things That Must Never Change
 
-Campaign hat.
+Campaign hat identity.
 
-Official badge.
+Yard Ranger Canada badge identity.
 
-Leaf symbol.
+Official Lawn With Care `[L]` brand identifier.
 
 Official palette.
+
+Core facial construction.
+
+Core character proportions.
 
 Relaxed posture.
 
@@ -625,7 +679,11 @@ Fashion sunglasses.
 
 Bright neon clothing.
 
-Corporate logos.
+Unapproved corporate logos.
+
+Third-party brand sponsorships.
+
+Excessive Lawn With Care branding beyond approved identity elements.
 
 Brand sponsorships other than Lawn With Care identity elements.
 
@@ -651,7 +709,38 @@ Same emotional tone.
 
 Same educational purpose.
 
+AI-generated artwork must be cross-checked against:
+
+`Assets/Model-Sheets/Brooks-Master-Model-Sheet-v1.0.png`
+
+The Master Model Sheet is the approved visual reference for Brooks v1.0.
+
+Generative AI is not authoritative for corporate artwork.
+
+When exact Lawn With Care branding is required, the official source logo/icon should be composited into the final artwork rather than relying on AI reproduction.
+
+An AI-generated variation does not become canon merely because it appears in an illustration.
+
 ---
+
+# Visual Reference Authority
+
+The approved Master Visual Reference is:
+
+`Assets/Model-Sheets/Brooks-Master-Model-Sheet-v1.0.png`
+
+Production hierarchy:
+
+1. `14-Canon.md` — immutable character canon.
+2. `15-Design-Rules.md` — permanent visual implementation rules.
+3. `06-Wardrobe.md` — wardrobe and branding specification.
+4. `05-Model-Sheet.md` — model sheet specification.
+5. `Brooks-Master-Model-Sheet-v1.0.png` — approved visual implementation.
+
+No individual AI generation may override this hierarchy.
+
+If an output conflicts with established canon, the output must be revised.
+
 
 # Design Checklist
 
@@ -695,4 +784,4 @@ Curiosity creates discovery.
 
 Status
 
-CANON v1.0
+CANON v1.1
