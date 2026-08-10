@@ -6,12 +6,13 @@ depends_on:
 - 02-Learning-Objective.md
 document: Story Blueprint
 episode: 01
-last_update: 2026-08-09
+last_update: 2026-08-10
 season: 00
 status: STORY LOCK CANDIDATE
+supersedes: 03-Story-Blueprint.md v1.0 (six-panel architecture)
 title: S00E01 --- Why Is It Sleeping So Long?
 universe: Lawn With Care Universe
-version: 1.0.0
+version: 2.0.0
 ---
 
 # S00E01 --- Why Is It Sleeping So Long?
@@ -25,7 +26,7 @@ version: 1.0.0
 # Purpose
 
 This document converts the approved S00E01 concept and science lock into
-a six-beat visual story.
+an **eight-beat** visual story.
 
 It defines:
 
@@ -34,35 +35,47 @@ It defines:
 -   scientific evidence order;
 -   emotional rhythm;
 -   Brooks and Sprout's functions;
--   visual purpose of each panel;
+-   visual purpose of each panel, including environment/scenery detail;
 -   continuity requirements.
 
-It does **not** lock final dialogue.
+It does **not** lock final composited typography (bubble shape, font
+size). It **does** lock the dialogue itself --- see `04-Script.md`,
+which is now written in lockstep with this document rather than as a
+later pass.
 
-Final dialogue belongs in:
+------------------------------------------------------------------------
 
-`04-Script.md`
+# Revision Note --- v1.0 to v2.0
+
+The original six-panel version worked, but its own retrospective
+(`08-Retrospective-Notes.md`) flagged Panel 06 as overloaded: it had to
+carry the scientific explanation, the care decision, and the closing
+caption in one image. This revision:
+
+1.  expands to **eight panels**, splitting that overloaded beat into a
+    dedicated UNDERSTAND panel and a dedicated CARE/CLOSE panel;
+2.  adds a **dedicated environment-establishing panel** at the open,
+    so the yard and season get real visual space instead of sharing a
+    frame with Sprout's first reaction;
+3.  locks dialogue for every panel now, at blueprint stage, instead of
+    leaving lines "optional" or deferring exact wording to the script.
+
+Six-panel artwork already produced (`Assets/Panels/Clean/S00E01-P01`
+through `P06`) maps approximately onto the new structure but does not
+satisfy it directly --- see "Artwork Migration Note" near the end of
+this document.
 
 ------------------------------------------------------------------------
 
 # Episode Promise
 
 Sprout notices an evergreen shrub that looks brown and lifeless after
-winter.
-
-She wonders why it has not "woken up."
-
-Instead of telling her whether it is dead, Brooks encourages her to look
-for evidence.
-
-Sprout investigates closely and discovers a viable bud among visibly
-damaged foliage.
-
-Brooks helps her understand that winter can damage parts of a plant
-without necessarily killing the entire plant.
-
-They decide to observe new spring growth before making an irreversible
-decision.
+winter. She wonders why it has not "woken up." Instead of telling her
+whether it is dead, Brooks encourages her to look for evidence. Sprout
+investigates closely and discovers a viable bud among visibly damaged
+foliage. Brooks helps her understand that winter can damage parts of a
+plant without necessarily killing the entire plant. They decide to
+observe new spring growth before making an irreversible decision.
 
 ------------------------------------------------------------------------
 
@@ -88,6 +101,8 @@ remains. Appearance alone is not enough to judge the entire plant.**
 # Emotional Progression
 
 ``` text
+CALM (environment)
+↓
 WONDER
 ↓
 CONCERN
@@ -98,24 +113,29 @@ FOCUS
 ↓
 SURPRISE
 ↓
-UNDERSTANDING + CARE
+UNDERSTANDING
+↓
+CARE
 ```
 
 ------------------------------------------------------------------------
 
 # Discovery Ownership
 
-Sprout owns the key discovery.
-
-Brooks owns neither the mystery nor the answer.
-
-His role is to help Sprout structure the investigation and interpret the
-evidence after she finds it.
+Sprout owns the key discovery. Brooks owns neither the mystery nor the
+answer. His role is to help Sprout structure the investigation and
+interpret the evidence after she finds it --- and, in this revision, to
+carry the scientific explanation in its own panel so it never has to
+compete for space with the care decision.
 
 Required sequence:
 
 ``` text
-SPROUT NOTICES
+ENVIRONMENT ESTABLISHES ITSELF
+↓
+SPROUT NOTICES (wonder)
+↓
+SPROUT NOTICES (the exception)
 ↓
 SPROUT ASKS
 ↓
@@ -132,82 +152,131 @@ THEY DECIDE WHAT CAREFUL ACTION MAKES SENSE
 
 ------------------------------------------------------------------------
 
-# Six-Panel Story Architecture
-
-The six-panel format remains a Season 00 production hypothesis.
+# Eight-Panel Story Architecture
 
 Each panel is a **separate 1080 × 1350 px, 4:5 portrait image**.
 
-Do not generate a six-panel comic page and crop it afterward.
+Do not generate an eight-panel comic page and crop it afterward.
 
 ------------------------------------------------------------------------
 
-# PANEL 01 --- Something Is Waking Up
+# PANEL 01 --- The Yard Wakes Up
 
 ## Story Function
 
-**ESTABLISH + WONDER**
+**ESTABLISH ENVIRONMENT** (new beat --- did not exist as its own panel
+in v1.0)
 
 ## Narrative Beat
 
-Early spring is beginning to appear in the yard.
+Before any character beat, the audience sees the whole setting: a
+modest residential yard in southern Alberta, caught in the exact hinge
+between winter and spring. Nothing dramatic happens. This panel's job
+is entirely atmospheric --- it buys the rest of the episode the right
+to move fast later.
 
-Sprout is already investigating small signs of seasonal change.
+## Scenery Detail (this panel carries the heaviest environment load in
+the episode)
 
-She notices emerging life with genuine excitement.
+-   full backyard in wide view: wooden fence line, a stepping-stone
+    path, a section of the house's siding at one edge;
+-   muted dormant lawn with faint early green re-emerging in patches;
+-   small remaining patches of old snow tucked in shaded corners
+    (fence-line shade, north side of the shrub) --- not a snow-covered
+    yard, just leftover pockets;
+-   damp, dark, recently-thawed soil visible along garden edges;
+-   the mystery evergreen shrub visible in the midground, not yet the
+    subject --- readable but not emphasized;
+-   one or two bare deciduous saplings with faint bud swelling;
+-   soft, pale, slightly overcast early-morning sky with thin
+    horizontal cloud bands;
+-   light direction: low, cool, coming from one side, casting long
+    soft shadows that read as early morning / early spring, not
+    summer noon.
 
-The audience should understand:
+## Characters
 
-**winter is ending.**
-
-## Sprout
-
-Active from the first image.
-
-She is not waiting for Brooks to introduce the subject.
-
-She may be crouched near early growth, observing carefully.
-
-Her loupe can be visible but does not need to dominate yet.
-
-## Brooks
-
-Present but secondary.
-
-He may be walking nearby, observing Sprout's investigation or recording
-something in his notebook.
-
-He should not lead the panel.
+Optional and secondary. Brooks and Sprout may be small figures
+entering the frame from the path, or omitted entirely in favor of a
+pure establishing shot. If included, neither should be posed or
+expressive --- this is not their beat yet.
 
 ## Visual Goal
 
-Create a warm contrast between:
+The viewer should feel the specific in-between-ness of the season
+before meeting the characters: winter is loosening its grip, spring
+hasn't arrived yet.
 
--   lingering early-spring dormancy;
--   subtle new life.
+## Dialogue
 
-The yard should not look fully lush and summer-green.
+None, or a single unobtrusive caption:
 
-## Story Information
-
-Without dialogue, the viewer should infer:
-
-**Spring is starting. Sprout is looking for signs of it.**
+CAPTION: *"Early spring in the yard."*
 
 ## Dialogue Load
 
-LOW.
-
-One short Sprout line or caption is enough.
+NONE / MINIMAL (caption only).
 
 ## Transition
 
-Sprout's attention shifts toward something that does not match the
-pattern.
+Cut in closer: something in this yard has already caught Sprout's
+attention.
 
 ------------------------------------------------------------------------
 
-# PANEL 02 --- The One That Didn't Wake Up
+# PANEL 02 --- Something Is Growing
+
+## Story Function
+
+**WONDER**
+
+## Narrative Beat
+
+Sprout has found a small, hopeful sign of spring --- fresh green shoots
+pushing up through damp soil. Her excitement is genuine and specific,
+not generic "yay spring."
+
+## Scenery Detail
+
+-   tight on a patch of bare soil near the path where tiny shoots (or
+    an emerging bulb/crocus) are pushing through;
+-   dark, damp soil texture with a few flattened, weathered leaves
+    left over from fall;
+-   the same fence line and shrub from Panel 01 visible, softly out of
+    focus, in the background --- continuity anchor, not the subject.
+
+## Sprout Pose
+
+Crouched naturally, leaning toward the new growth, one hand near the
+ground, delighted expression. Loupe visible but not necessarily in
+use yet.
+
+## Brooks Pose
+
+Present, secondary, a few steps back or to one side, watching rather
+than leading. Notebook may be in hand.
+
+## Dialogue
+
+SPROUT: "Brooks! Look! Everything's waking up!"
+
+## Dialogue-Safe Area
+
+Upper-left or upper-center negative space, depending on character
+placement. Keep Brooks' face out of the bubble zone.
+
+## Dialogue Load
+
+VERY LOW --- one line.
+
+## Transition
+
+Sprout's attention shifts to something that breaks the hopeful
+pattern she just found.
+
+------------------------------------------------------------------------
+
+# PANEL 03 --- The Exception
 
 ## Story Function
 
@@ -215,63 +284,54 @@ pattern.
 
 ## Narrative Beat
 
-Sprout notices the evergreen shrub.
+Sprout notices the evergreen shrub up close. Unlike everything she
+just found, parts of it look brown, dry, lifeless. Her question
+emerges naturally, then deepens.
 
-Unlike the hopeful signs around it, parts of this plant look brown, dry
-or lifeless.
+## Scenery Detail
 
-She moves closer.
+-   the shrub now fills a substantial part of the frame;
+-   brown/tan exposed foliage clearly readable on the more
+    sun-and-wind-exposed side of the plant;
+-   enough remaining woody structure and less-damaged foliage visible
+    to avoid reading as a uniformly dead mass;
+-   the same fence/hardscape from Panels 01--02 visible behind, for
+    spatial continuity;
+-   mulch or bare soil at the shrub's base, consistent with the yard
+    established in Panel 01.
 
-Her question emerges naturally:
+## Sprout Pose
 
-**Why is it sleeping so long?**
+Closest to the shrub, body language shifting from delight to puzzled
+concern --- not fear.
 
-Then the deeper concern:
+## Brooks Pose
 
-**Is it dead?**
+Entering the frame behind or beside her. He has not answered
+anything yet.
 
-## Sprout
+## Dialogue
 
-Closest to the shrub.
+SPROUT: "Except this one..."
 
-Her body language shows concern and curiosity, not fear.
+SPROUT: "Why is it sleeping so long?"
 
-## Brooks
+## Dialogue-Safe Area
 
-May enter the composition behind or beside her.
-
-He has not answered.
-
-## Visual Goal
-
-The damaged plant must be visually legible.
-
-Show:
-
--   brown/tan exposed foliage;
--   enough remaining structure to support later investigation;
--   no obvious disease, chewing or mechanical damage that introduces
-    another explanation.
-
-## Composition
-
-Sprout and the plant should dominate.
-
-Brooks should not visually overpower the mystery.
+Upper-right if Sprout occupies left/lower-left. Keep the damaged
+foliage visible and legible.
 
 ## Dialogue Load
 
-LOW--MEDIUM.
-
-The panel needs the central question but not the explanation.
+LOW.
 
 ## Transition
 
-Brooks responds by changing the task from guessing to observing.
+Brooks changes the task from guessing to observing.
 
 ------------------------------------------------------------------------
 
-# PANEL 03 --- What Do You Notice?
+# PANEL 04 --- What Do You Notice?
 
 ## Story Function
 
@@ -279,53 +339,48 @@ Brooks responds by changing the task from guessing to observing.
 
 ## Narrative Beat
 
-Brooks joins Sprout at the plant.
+Brooks joins Sprout at the plant. Instead of answering "dead or
+alive," he asks her to look for evidence.
 
-Instead of answering "dead or alive," he asks her to look for evidence.
+## Scenery Detail
 
-Conceptual Brooks beat:
+Same shrub, same damage pattern, same light as Panel 03 --- this panel
+is close enough that background yard elements recede; the shrub and
+the two characters dominate.
 
-**What do you notice?**
+## Brooks Pose
 
-He may gently redirect her attention to differences between parts of the
-plant.
+Crouched or kneeling, near Sprout's conversational eye level. Calm,
+open posture. Notebook may rest in one hand. If he gestures, it
+refers generally to the plant --- never points directly at the viable
+bud.
 
-## Brooks
+## Sprout Pose
 
-This is the strongest Brooks teaching moment before the explanation.
-
-He should:
-
--   crouch or kneel;
--   be near Sprout's conversational level;
--   remain calm;
--   direct attention rather than point to the answer.
-
-His notebook may be visible.
-
-## Sprout
-
-Thinking.
-
-She begins comparing rather than simply reacting.
+Thinking, comparing rather than simply reacting, loupe ready in hand.
 
 ## Relationship Canon Test
 
-This panel must visibly demonstrate:
+This panel must visibly demonstrate: **Brooks guides. Sprout
+investigates.**
 
-**Brooks guides. Sprout investigates.**
+## Dialogue
 
-## Visual Goal
+BROOKS: "Maybe. But let's not guess yet."
 
-Show them sharing the same investigation space.
+BROOKS: "What do you notice?"
 
-Neither should look like a teacher lecturing a student.
+SPROUT: "The outside looks brown and dry."
+
+## Dialogue-Safe Area
+
+Split upper zone: Brooks' lines upper-left/upper-center, Sprout's
+response in a smaller secondary area. Avoid stacking bubbles over
+faces.
 
 ## Dialogue Load
 
 MEDIUM.
-
-Prefer a question from Brooks and a short observation from Sprout.
 
 ## Transition
 
@@ -333,7 +388,7 @@ Sprout decides she needs to get closer.
 
 ------------------------------------------------------------------------
 
-# PANEL 04 --- Look Closer
+# PANEL 05 --- Look Closer
 
 ## Story Function
 
@@ -341,49 +396,45 @@ Sprout decides she needs to get closer.
 
 ## Narrative Beat
 
-Sprout uses her magnifying loupe.
+Sprout uses her magnifying loupe on the damaged foliage and nearby
+buds. Something catches her attention.
 
-This is the episode's strongest visual investigation moment.
+## Scenery Detail
 
-She examines the damaged foliage and nearby buds.
+Tight on the key branch: damaged brown/tan foliage immediately
+surrounding it, enough of the plant's woody structure visible to stay
+botanically legible, no background yard elements competing for
+attention.
 
-Something catches her attention.
+## Sprout Pose
 
-## Sprout
+Narrative and visual lead, closest to the evidence, concentrated
+expression shifting toward the first hint of noticing something.
 
-Narrative and visual lead.
+## Brooks Pose
 
-She is closest to the evidence.
-
-## Brooks
-
-Slightly behind or beside her.
-
-He should be watching Sprout's process, not pointing out the answer.
+Slightly behind or beside her, calm, watching her process --- not
+pointing at the answer.
 
 ## Discovery Frame
 
-**PRIMARY CANDIDATE FOR USE.**
+**Primary candidate for use.** An organic, non-technological inset
+showing an enlarged view of the branch: damaged foliage around a
+small, plausible viable bud. No glow, no HUD, no scanner graphics.
 
-The Discovery Frame may show an enlarged close view of the bud area.
+## Dialogue
 
-Its purpose is to help the audience participate in the observation.
+SPROUT: "Hmm..."
 
-It should not yet over-explain the answer.
+SPROUT: "Wait..."
 
-## Visual Goal
+## Dialogue-Safe Area
 
-The viewer should search with Sprout.
-
-The clue may be visible but not yet verbally interpreted.
+Minimal --- preserve maximum visual room for the investigation itself.
 
 ## Dialogue Load
 
 VERY LOW.
-
-Potentially only a short reaction.
-
-The image should do most of the work.
 
 ## Transition
 
@@ -392,7 +443,7 @@ assumption.
 
 ------------------------------------------------------------------------
 
-# PANEL 05 --- Wait... This Bud Is Alive!
+# PANEL 06 --- This Bud Is Alive!
 
 ## Story Function
 
@@ -400,173 +451,201 @@ assumption.
 
 ## Narrative Beat
 
-Sprout identifies the viable bud.
+Sprout identifies the viable bud. This is the key discovery: the
+plant cannot simply be assumed dead.
 
-This is the key discovery.
+## Scenery Detail
 
-She now has evidence that the entire plant cannot simply be assumed
-dead.
+Close-medium on Sprout and the bud-bearing branch. The viable bud is
+now clearly readable to the viewer while remaining botanically
+plausible. Surrounding brown/tan damaged foliage stays visible for
+contrast --- do not make the whole branch green.
 
-## Sprout
+## Sprout Pose
 
-Owns the moment.
+Owns the moment: delighted, surprised, gesturing carefully toward the
+branch. Reaction should read as "I found something," not "Brooks told
+me the answer."
 
-Her reaction should communicate:
+## Brooks Pose
 
-**I found something!**
+Responds to her discovery --- leans in slightly, warm approving smile.
+Does not take control of the moment.
 
-Not:
+## Dialogue
 
-**Brooks told me the answer.**
+SPROUT: "Brooks! This bud is still alive!"
 
-## Brooks
+BROOKS: "Good eye, Sprout."
 
-Responds to her discovery.
+## Dialogue-Safe Area
 
-He may smile, lean in or ask a confirming question.
-
-His body language should celebrate her observation.
-
-## Scientific Meaning
-
-The living bud is evidence of viable tissue.
-
-It does NOT prove that:
-
--   the whole plant is healthy;
--   all damaged foliage will recover;
--   every branch survived.
-
-## Visual Goal
-
-Make the viable bud readable enough that the audience understands why it
-matters.
-
-The surrounding damaged foliage should remain visible for contrast.
+Dominant clean area for Sprout's line; smaller secondary area for
+Brooks.
 
 ## Dialogue Load
 
 LOW--MEDIUM.
 
-Sprout gets the key discovery line.
-
-Brooks should not immediately deliver a long explanation.
-
 ## Transition
 
-Now that they have evidence, Brooks can help explain what winter may
-have done.
+Now that they have evidence, Brooks can explain what winter may have
+done --- in its own panel, not squeezed into this one.
 
 ------------------------------------------------------------------------
 
-# PANEL 06 --- Look Before You Decide
+# PANEL 07 --- Understanding Winter Injury
 
 ## Story Function
 
-**UNDERSTAND + CARE + CLOSE**
+**UNDERSTAND** (new dedicated beat --- previously shared a panel with
+CARE/CLOSE in v1.0, which the retrospective flagged as overloaded)
 
 ## Narrative Beat
 
-Brooks connects Sprout's evidence to the larger idea.
+Brooks connects Sprout's evidence to the larger idea: winter can
+damage exposed plant tissue while other tissue survives. This is the
+appropriate moment for explanation, because the audience has already
+participated in the investigation.
 
-Winter can damage exposed plant tissue.
+## Scenery Detail
 
-Wind and sun can contribute to drying while frozen soil limits the
-plant's ability to replace water.
+Pull back slightly from Panel 06 to a medium two-shot that shows more
+of the whole shrub at once --- both the damaged, exposed side and a
+healthier, more sheltered side --- so the "some parts, not all parts"
+idea is visible, not just spoken. Soft morning light continues from
+the same direction established since Panel 01. Leave open sky/fence
+negative space above the characters for dialogue.
 
-Some tissue may be damaged even when viable tissue remains.
+## Brooks Pose
 
-They choose observation rather than immediate heavy pruning/removal.
+Gentle explanatory gesture toward the whole shrub (not just the bud),
+notebook may be open, calm and thoughtful expression.
 
-## Brooks
+## Sprout Pose
 
-Provides the short scientific connection.
+Engaged and active, looking between Brooks and the plant, not a
+passive listener.
 
-This is the appropriate moment for explanation because the audience has
-already participated in the investigation.
+## Dialogue
 
-## Sprout
+BROOKS: "Winter can dry out exposed parts, even when some of the
+plant is still alive."
 
-Still active.
+SPROUT: "So it's not all dead?"
 
-She should respond to what the evidence means for what they do next.
+BROOKS: "Not all of it. That's why we look closely."
 
-The care decision belongs to both of them.
+## Scientific Visual Requirement
 
-## Closing Principle
+The image must show both a damaged area and a healthier/sheltered
+area of the same shrub --- the panel's whole purpose is to make "some
+tissue damaged, other tissue alive" visible.
 
-Conceptually:
+## Dialogue-Safe Area
 
-**Look before you decide.**
-
-or
-
-**Observe before you cut.**
-
-Final wording remains for the script.
-
-## Visual Goal
-
-End with the characters and plant together.
-
-The plant should not magically appear healed.
-
-Brown damaged foliage remains brown.
-
-The ending represents understanding, not instant recovery.
+Generous --- this panel now only carries the explanation, not the care
+decision or closing caption, so it needs less text than the old
+combined panel did.
 
 ## Dialogue Load
 
 MEDIUM.
 
-Keep the explanation concise enough for Instagram.
+## Transition
 
-Do not turn the final panel into a textbook.
+Understanding becomes a decision about what to do next.
+
+------------------------------------------------------------------------
+
+# PANEL 08 --- Look Before You Decide
+
+## Story Function
+
+**CARE + CLOSE**
+
+## Narrative Beat
+
+Brooks and Sprout decide to wait and watch rather than prune or
+remove the shrub immediately. The episode closes on patience, not
+resolution --- the plant is not magically healed.
+
+## Scenery Detail
+
+Pull back further than Panel 07, toward a medium-wide shot that
+echoes Panel 01's environment establishing shot --- same yard, same
+fence line, now read with a little more understanding than the
+opening image had. The shrub still visibly contains the same
+brown/tan damaged foliage. Do not show instant recovery, pruning
+already happening, or the shrub removed.
+
+## Brooks Pose
+
+Near Sprout rather than a dominant standing pose, warm and thoughtful.
+
+## Sprout Pose
+
+Looking at the plant with new understanding, loupe relaxed in hand,
+still engaged rather than passive.
+
+## Dialogue
+
+SPROUT: "So we shouldn't give up on it yet."
+
+BROOKS: "Exactly. Let's watch what grows before we decide what to
+cut."
+
+## Closing Caption
+
+**LOOK CLOSER BEFORE YOU DECIDE.**
+
+## Dialogue-Safe Area
+
+This panel needs the second-largest text allowance in the episode
+(after none --- Panel 01 needs none). Reserve a clean upper region
+and/or separated left/right spaces for the two-line exchange plus the
+closing caption, kept visually distinct from character dialogue.
+
+## Dialogue Load
+
+MEDIUM --- but split from Panel 07's explanation, so meaningfully
+lighter than the old combined Panel 06.
+
+## Scientific Visual Requirement
+
+Brown damaged foliage remains brown. No instant recovery.
 
 ------------------------------------------------------------------------
 
 # Visual Rhythm
 
-The carousel should progressively move closer to the subject.
-
-Suggested visual rhythm:
-
 ``` text
-P01 — WIDE / ENVIRONMENT
-P02 — MEDIUM / MYSTERY
-P03 — TWO-SHOT / SHARED INVESTIGATION
-P04 — CLOSE / LOUP + DISCOVERY FRAME
-P05 — CLOSE-MEDIUM / DISCOVERY REACTION
-P06 — MEDIUM-WIDE / UNDERSTANDING + CARE
+P01 — WIDE, NO CHARACTERS EMPHASIZED — the season
+P02 — MEDIUM — wonder
+P03 — MEDIUM — mystery
+P04 — TWO-SHOT — shared method
+P05 — CLOSE — investigation
+P06 — CLOSE-MEDIUM — discovery
+P07 — MEDIUM (WIDER THAN P06) — understanding
+P08 — MEDIUM-WIDE — care, echoing P01
 ```
 
-This creates a visual metaphor:
+The camera moves in across P01→P05, holds close for the discovery at
+P06, then eases back out across P07→P08 --- ending almost, but not
+quite, back where it started. That return is intentional:
 
-**The closer they look, the more they understand.**
+**We looked closely. Now we see the whole yard differently.**
 
 ------------------------------------------------------------------------
 
 # Camera Philosophy
 
-Avoid six images with the same camera distance.
-
-The episode should feel visually alive while maintaining continuity.
-
-Preferred:
-
--   child-eye-level perspectives;
--   ground-level nature observation;
--   close detail;
--   intimate two-shots;
--   environmental closing shot.
-
-Avoid:
-
--   repeated frontal character lineup;
--   Brooks hero angles;
--   extreme low-angle Brooks;
--   Sprout hidden behind Brooks;
--   overly busy backgrounds.
+Avoid repeated identical camera distances. Preferred: child-eye-level
+perspectives, ground-level nature observation, close detail, intimate
+two-shots, and now a genuine wide environmental bookend at open and
+close. Avoid: repeated frontal character lineup, Brooks hero angles,
+extreme low-angle Brooks, Sprout hidden behind Brooks, overly busy
+backgrounds.
 
 ------------------------------------------------------------------------
 
@@ -587,6 +666,8 @@ S00E01-P03.png
 S00E01-P04.png
 S00E01-P05.png
 S00E01-P06.png
+S00E01-P07.png
+S00E01-P08.png
 ```
 
 Each file must be independently publishable.
@@ -595,55 +676,37 @@ Each file must be independently publishable.
 
 # Text-Safe Zones
 
-Because final dialogue should be composited separately, visual prompts
-must deliberately preserve negative space.
-
-General rule:
-
--   keep faces away from extreme top corners;
--   avoid placing the key plant clue behind expected text areas;
--   keep critical details away from crop-sensitive edges;
--   allow one clean dialogue zone where needed.
-
-Exact bubble placement will be defined in the panel breakdown.
+Per `06-Visual-Prompts.md`, dialogue text is now included from the
+first draft rather than deferred entirely to a later lettering pass
+(see that document's "Text Rule" for the updated workflow and its
+QA caveat). Visual prompts must still deliberately preserve negative
+space so a corrected/finalized text pass remains possible without
+reflowing the composition. General rule unchanged: keep faces away
+from extreme top corners; keep the key plant clue out of expected
+text areas; keep critical details away from crop-sensitive edges.
 
 ------------------------------------------------------------------------
 
 # Continuity Anchor --- The Shrub
 
-The shrub is effectively a temporary episode character.
-
-It must remain recognizable between panels.
-
-Lock:
-
--   overall shape;
--   approximate size;
--   location;
--   pattern of damaged foliage;
--   key branch/bud area;
--   relationship to nearby yard elements.
-
-Do not allow each generation to invent a different plant.
-
-A dedicated episode reference image may be useful before final panel
-generation.
+The shrub is effectively a temporary episode character. It must
+remain recognizable across all eight panels. Lock: overall shape,
+approximate size, location, pattern of damaged foliage, key
+branch/bud area, relationship to nearby yard elements (fence,
+stepping-stone path, house edge). Do not allow each generation to
+invent a different plant.
 
 ------------------------------------------------------------------------
 
-# Continuity Anchor --- Time and Weather
+# Continuity Anchor --- Time, Weather and the Wider Yard
 
-All six panels should feel like one short continuous event.
-
-Lock:
-
--   early spring;
--   same general time of day;
--   compatible light direction;
--   compatible cloud conditions;
--   same yard;
--   no sudden snow/weather change;
--   no major costume change.
+All eight panels feel like one short continuous morning. Lock: early
+spring, same general time of day, compatible light direction, same
+yard (fence line, stepping-stone path, house edge visible in P01 and
+echoed in P08), no sudden snow/weather change, no costume change. The
+patches of leftover snow established in P01 should not spread or
+vanish inconsistently across the episode --- treat them as a fixed
+environmental detail, not a variable one.
 
 ------------------------------------------------------------------------
 
@@ -651,187 +714,135 @@ Lock:
 
 ## Brooks
 
-Follow:
-
--   Brooks Master Model Sheet;
--   Brooks Canon;
--   Brooks Design Rules;
--   Brooks Visual Canon Audit.
+Follow: Brooks Master Model Sheet; `14-Canon.md`; `15-Design-Rules.md`;
+Brooks Visual Canon Audit (note its open finding about hair visibility
+under the hat --- resolve before treating any new panel as final).
 
 ## Sprout
 
-Follow:
-
--   Sprout Master Model Sheet;
--   Sprout Canon;
--   Sprout Visual Canon Audit.
+Follow: Sprout Master Model Sheet; `14-Canon.md`.
 
 ## Together
 
-Follow:
-
--   Brooks & Sprout Relationship Canon;
--   Brooks-Sprout Relationship/Scale Sheet.
+Follow: `Relationship-Canon.md`;
+`Brooks-Sprout-Relationship-Scale-Sheet-v1.0.png`.
 
 No episode prompt may override these sources.
 
 ------------------------------------------------------------------------
 
-# Dialogue Budget Hypothesis
+# Dialogue Budget --- Locked at Blueprint Stage
 
-Season 00 should test concise mobile dialogue.
+Unlike v1.0, dialogue is not deferred to the script as "final wording
+remains for the script." It is locked here and carried forward
+verbatim into `04-Script.md`:
 
-Initial target:
+-   P01: 0 lines (optional caption only)
+-   P02: 1 line
+-   P03: 2 lines
+-   P04: 2 lines
+-   P05: 1 short line ("Hmm... Wait...")
+-   P06: 2 lines
+-   P07: 3 lines
+-   P08: 2 lines + 1 closing caption
 
--   P01: 1 short line
--   P02: 1--2 short lines
--   P03: 2 short lines
--   P04: 0--1 short line
--   P05: 1--2 short lines
--   P06: 2--3 concise lines
-
-This is a hypothesis, not a permanent standard.
-
-If text overwhelms the image, reduce dialogue rather than shrinking
-typography excessively.
+No panel exceeds 3 spoken lines. The previous single-panel high-water
+mark (old Panel 06's 3 lines + caption, judged the format's main risk)
+is now split across two panels (P07 and P08), each carrying less than
+the original combined load.
 
 ------------------------------------------------------------------------
 
-# No AI Lettering Dependency
+# Artwork Migration Note
 
-Final production should not depend on the image model rendering exact
-dialogue.
-
-Preferred workflow:
+Existing clean artwork (`Assets/Panels/Clean/S00E01-P01` through
+`P06`, versions 1.0 and 2.0) was produced against the v1.0 six-panel
+architecture. Approximate mapping to the new eight-panel structure:
 
 ``` text
-GENERATE CLEAN PANEL ART
-↓
-CANON REVIEW
-↓
-SELECT / CORRECT IMAGE
-↓
-ADD SPEECH BUBBLES
-↓
-ADD FINAL TEXT
-↓
-PROOFREAD
-↓
-EXPORT 1080 × 1350
+OLD P01 (wonder + subtle establishing) → split into NEW P01 (pure environment) + NEW P02 (wonder)
+OLD P02 (the exception)                → NEW P03
+OLD P03 (what do you notice?)          → NEW P04
+OLD P04 (look closer)                  → NEW P05
+OLD P05 (this bud is alive!)           → NEW P06
+OLD P06 (understand + care + close)    → split into NEW P07 (understand) + NEW P08 (care/close)
 ```
+
+None of the existing panels can be reused as-is for the new structure
+without regeneration or re-cropping review, because: NEW P01 needs a
+genuinely characters-secondary wide environment shot that didn't exist
+before; NEW P02 needs re-cropping/re-composing without the
+establishing-shot duties OLD P01 was also carrying; NEW P07 and P08
+need to be generated as two distinct images from what was one OLD P06
+prompt. Treat all eight panels of this revision as new production,
+not a relabeling of existing files.
 
 ------------------------------------------------------------------------
 
 # Story Logic Check
 
-The episode must NOT accidentally imply:
+Unchanged from v1.0 --- still must NOT imply:
 
 ``` text
-Brown foliage
-=
-Winter desiccation proven
+Brown foliage = Winter desiccation proven
 ```
 
 Instead:
 
 ``` text
-Brown foliage
-=
-Reason to investigate
+Brown foliage = Reason to investigate
 ```
 
 and:
 
 ``` text
-Viable bud
-=
-Evidence that viable tissue remains
+Viable bud = Evidence that viable tissue remains
 ```
-
-Brooks may explain winter drying as the likely educational mechanism
-within the intentionally designed scenario.
 
 ------------------------------------------------------------------------
 
 # Character Agency Check
 
-At the end of the episode:
-
-Sprout should have:
-
--   noticed the mystery;
--   participated in forming the question;
--   investigated;
--   used a tool;
--   found the key evidence;
--   understood why it changes the conclusion.
-
-Brooks should have:
-
--   encouraged observation;
--   asked useful questions;
--   respected Sprout's process;
--   helped interpret the evidence;
--   connected discovery to care.
-
-------------------------------------------------------------------------
-
-# Pilot Experiment Notes
-
-S00E01 specifically tests whether a six-panel carousel provides enough
-space for:
-
-1.  setup;
-2.  mystery;
-3.  investigation;
-4.  close observation;
-5.  discovery;
-6.  scientific understanding + care.
-
-If Panel 06 becomes overloaded, that is evidence that six panels may be
-too restrictive.
-
-Do not solve an overloaded panel by making text tiny.
-
-Document the finding for the Season 00 retrospective.
+Unchanged from v1.0. Sprout: notices, questions, investigates, uses a
+tool, finds the key evidence, understands why it changes the
+conclusion. Brooks: encourages observation, asks useful questions,
+respects Sprout's process, helps interpret the evidence, connects
+discovery to care --- now with a full panel of his own to do the
+connecting in, rather than rushing it.
 
 ------------------------------------------------------------------------
 
 # Story Blueprint Approval Test
 
-Before advancing to script, confirm:
+Before advancing to script (already done in lockstep --- see
+`04-Script.md`), confirm:
 
--   [ ] The mystery is visually understandable.
--   [ ] Sprout owns the key discovery.
--   [ ] Brooks does not reveal the answer early.
--   [ ] Scientific evidence appears before explanation.
--   [ ] The viable bud is not treated as proof of total plant health.
--   [ ] The plant does not magically recover.
--   [ ] The care message is cautious.
--   [ ] All panels can work as separate 4:5 images.
--   [ ] The six-panel sequence has visual variety.
--   [ ] Dialogue can remain mobile-friendly.
--   [ ] Relationship Canon is respected.
--   [ ] No new badge is required.
--   [ ] Official logo reproduction is not delegated to image generation.
+-   [x] The mystery is visually understandable.
+-   [x] Sprout owns the key discovery.
+-   [x] Brooks does not reveal the answer early.
+-   [x] Scientific evidence appears before explanation.
+-   [x] The viable bud is not treated as proof of total plant health.
+-   [x] The plant does not magically recover.
+-   [x] The care message is cautious.
+-   [x] All panels can work as separate 4:5 images.
+-   [x] The eight-panel sequence has visual variety, including a
+    dedicated environment panel.
+-   [x] Dialogue is locked and mobile-friendly, with no panel exceeding
+    3 lines.
+-   [x] Relationship Canon is respected.
+-   [x] No new badge is required.
+-   [x] Official logo reproduction is not delegated to image
+    generation.
 
 ------------------------------------------------------------------------
 
 # Next Document
 
-`04-Script.md`
-
-The script will now lock:
-
--   exact dialogue;
--   speech ownership;
--   panel-level text;
--   narration if any;
--   final closing line;
--   dialogue length appropriate for 1080 × 1350 Instagram panels.
+`04-Script.md` --- now written to match this document's locked
+dialogue exactly, not as a separate wording pass.
 
 ------------------------------------------------------------------------
 
 # Status
 
-**STORY LOCK CANDIDATE --- v1.0**
+**STORY LOCK CANDIDATE --- v2.0 (eight-panel revision)**

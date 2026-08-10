@@ -3,12 +3,12 @@ author: Ronan Campos
 creative_direction: OpenAI ChatGPT
 document: Concept
 episode: 01
-last_update: 2026-08-09
+last_update: 2026-08-10
 season: 00
 status: IN DEVELOPMENT
 title: S00E01 --- Why Is It Sleeping So Long?
 universe: Lawn With Care Universe
-version: 1.0.0
+version: 1.1.0
 ---
 
 # S00E01 --- Why Is It Sleeping So Long?
@@ -45,7 +45,15 @@ The episode should validate:
 
 ## Production Format --- Pilot Hypothesis
 
-The episode will initially test a **6-panel carousel**.
+**Revision (2026-08-10):** the pilot now tests an **8-panel carousel**,
+up from the original 6-panel hypothesis. The extra two panels give a
+dedicated environment-establishing shot at the open (addressing
+production feedback that the yard/season deserved more visual space)
+and split what had been an overloaded closing panel into a dedicated
+science-explanation beat and a dedicated care/closing beat. See
+`03-Story-Blueprint.md` v2.0 for the full architecture and the
+retrospective note in `08-Retrospective-Notes.md` for why the split
+happened.
 
 Each panel must be produced as an **independent image file**, not as one
 AI-generated comic page that is later cropped.
@@ -69,6 +77,8 @@ S00E01-P03.png
 S00E01-P04.png
 S00E01-P05.png
 S00E01-P06.png
+S00E01-P07.png
+S00E01-P08.png
 ```
 
 Each image must work individually while maintaining visual continuity
@@ -76,7 +86,7 @@ with the complete carousel.
 
 ### Important Production Rule
 
-Do not generate six panels inside one image.
+Do not generate multiple panels inside one image.
 
 Generate:
 
@@ -98,9 +108,12 @@ A combined page may be created later as a secondary derivative.
 
 ## Text-Safe Composition
 
-Because dialogue will be added through controlled composition, each
-panel should reserve useful negative space for speech bubbles or
-captions.
+**Revision (2026-08-10):** dialogue is now written into each panel's
+first-draft generation prompt rather than added only in a later
+compositing pass (see `06-Visual-Prompts.md`, "Text Rule"). Negative
+space still matters --- it protects a correction pass if the model's
+text rendering needs fixing --- so each panel should still reserve
+useful space for its dialogue or captions.
 
 Do not place essential faces, props, clues or environmental evidence
 directly against every edge.
@@ -424,19 +437,24 @@ The story must work even without overt promotional branding.
 
 ------------------------------------------------------------------------
 
-# Initial Six-Panel Hypothesis
+# Initial Eight-Panel Hypothesis
 
-The exact panel breakdown will be developed later in:
+The exact panel breakdown lives in:
 
 `05-Panel-Breakdown.md`
 
-At concept stage, the six-panel hypothesis is:
+Current (v2.0) eight-panel hypothesis:
 
-### Panel 1 --- Spring Is Waking Up
+### Panel 1 --- The Yard Wakes Up
 
-Establish early spring and Sprout observing signs of new life.
+Pure environment-establishing shot: the yard caught between winter
+and spring, before any character beat.
 
-### Panel 2 --- The Exception
+### Panel 2 --- Something Is Growing
+
+Sprout observes a specific sign of new life. Wonder.
+
+### Panel 3 --- The Exception
 
 Sprout notices the plant that still appears lifeless.
 
@@ -444,32 +462,40 @@ Mystery:
 
 **Why is it sleeping so long?**
 
-### Panel 3 --- Don't Guess Yet
+### Panel 4 --- What Do You Notice?
 
 Brooks joins the investigation and encourages observation rather than
 giving the answer.
 
-### Panel 4 --- Look Closer
+### Panel 5 --- Look Closer
 
 Sprout investigates with her magnifying loupe.
 
 Potential Discovery Frame moment.
 
-### Panel 5 --- Evidence
+### Panel 6 --- This Bud Is Alive!
 
 Sprout finds the key clue showing that the plant's condition is more
 complicated than "dead or alive."
 
-### Panel 6 --- Understand & Care
+### Panel 7 --- Understanding Winter Injury
 
-Brooks helps connect the evidence to winter plant stress/damage.
+Brooks connects the evidence to winter plant stress/damage, in its
+own panel rather than sharing space with the closing beat.
+
+### Panel 8 --- Look Before You Decide
+
+Brooks and Sprout decide to wait and observe rather than act
+immediately.
 
 Closing principle:
 
 **Look before you decide.**
 
-This six-panel sequence is experimental and may change after Story
-Blueprint development.
+This eight-panel sequence supersedes the original six-panel
+hypothesis after the Season 00 retrospective flagged the old closing
+panel as overloaded; see `03-Story-Blueprint.md` v2.0 for the full
+rationale.
 
 ------------------------------------------------------------------------
 
@@ -487,14 +513,18 @@ Each final panel should:
 -   maintain continuity with adjacent panels;
 -   function as a standalone image when viewed outside the carousel.
 
-Do not bake unreliable AI-generated dialogue into final artwork when
-controlled text overlay is available.
+**Revision (2026-08-10):** dialogue is now included in the first-draft
+generation prompt for every panel rather than deferred entirely to a
+later overlay step (see `06-Visual-Prompts.md`, "Text Rule"). AI text
+rendering is still treated as unreliable for final typography --- a
+controlled correction pass remains available before export --- but the
+wording itself is locked from the first draft, not added afterward.
 
 ------------------------------------------------------------------------
 
 # Continuity Requirements
 
-Across all six independently generated images, preserve:
+Across all eight independently generated images, preserve:
 
 ## Brooks
 
@@ -538,8 +568,8 @@ between panels.
 
 ## Test 01 --- Separate Panel Generation
 
-Can six independent 4:5 images maintain enough continuity to feel like
-one episode?
+Can eight independent 4:5 images maintain enough continuity to feel
+like one episode?
 
 ## Test 02 --- Character Consistency
 
@@ -589,17 +619,18 @@ The concept succeeds if:
 
 # Not Yet Locked
 
-The following remain intentionally open at concept stage:
+**Revision (2026-08-10):** several of these have since been resolved
+by `03-Story-Blueprint.md` v2.0 and `04-Script.md` v2.0 --- final
+dialogue, final panel count (eight), and the final closing line are
+now locked. Remaining open items:
 
 -   exact plant species;
--   exact scientific terminology;
--   exact evidence shown;
--   final dialogue;
--   exact number of words per panel;
+-   exact scientific terminology beyond what `02-Learning-Objective.md`
+    already locks;
+-   exact evidence shown (specific art direction of the damage
+    pattern);
 -   exact Discovery Frame implementation;
--   final panel count if six proves unsuitable;
--   whether a badge moment occurs;
--   final closing line.
+-   whether a badge moment occurs.
 
 These decisions belong to later production stages.
 

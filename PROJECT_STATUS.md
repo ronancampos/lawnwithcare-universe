@@ -223,37 +223,43 @@ Status:
 
 S00E01 — "Why Is It Sleeping So Long?" (`13-Episodes/Season-00-Pilots/S00E01-Why-Is-It-Sleeping-So-Long/`)
 
+Revised 2026-08-10: expanded from 6 to 8 panels, with dialogue now locked and included in first-draft prompts instead of a later overlay pass. See `03-Story-Blueprint.md` v2.0, `04-Script.md` v2.0, `05-Panel-Breakdown.md` v2.0, `06-Visual-Prompts.md` v2.0, and `08-Retrospective-Notes.md` for the reasoning (the original six-panel closing beat was overloaded).
+
 Complete:
 
-✔ Concept
+✔ Concept (v1.1, eight-panel hypothesis)
 
 ✔ Learning Objective (`SCIENCE LOCK`)
 
-✔ Story Blueprint (`STORY LOCK CANDIDATE`)
+✔ Story Blueprint (`STORY LOCK CANDIDATE`, v2.0, eight-panel architecture)
 
-✔ Script (`SCRIPT CANDIDATE`)
+✔ Script (`SCRIPT LOCK`, v2.0, dialogue fully locked for all 8 panels)
 
-✔ Panel Breakdown (`VISUAL PLANNING`)
+✔ Panel Breakdown (`VISUAL PLANNING`, v2.0, expanded scenery/environment detail)
 
-✔ Visual Prompts (`READY FOR VISUAL TESTING`)
+✔ Visual Prompts (`READY FOR VISUAL TESTING`, v2.0, dialogue included in first-draft prompts)
 
-✔ Environment/shrub continuity reference generated
+Superseded by the revision (kept for reference, not satisfying the new structure):
 
-✔ Clean draft artwork generated for all 6 panels, including v2.0 revisions
+⚠ Environment/shrub continuity reference (v1.0) — needs regeneration/extension to cover the fence/path/leftover-snow layout and the shrub's healthier side needed for the new P07
+
+⚠ Clean draft artwork for the old 6 panels (v1.0/v2.0) — does not map 1:1 onto the new 8-panel structure; see `03-Story-Blueprint.md`, "Artwork Migration Note"
 
 Pending:
 
 □ Formal creative sign-off on each pipeline document (documents are complete but none are marked fully `APPROVED`; see `07-Production-Checklist.md`)
 
-□ Final panel review against Master Model Sheets (one open finding: Brooks' hair reads as visible under the hat in some panels — see the Brooks Visual Canon Audit)
+□ Generate the new P01–P08 draft artwork (with dialogue included per the updated workflow)
 
-□ Lettering / text overlay workflow
+□ Final panel review against Master Model Sheets (one open finding carried over: Brooks' hair reads as visible under the hat in some panels — see the Brooks Visual Canon Audit)
+
+□ Text-rendering correction pass workflow (per the updated "Text Rule")
 
 □ Final 1080×1350 export
 
 □ Social assets
 
-□ Season 00 retrospective on the six-panel carousel format (see `08-Retrospective-Notes.md`)
+□ Season 00 retrospective on the eight-panel carousel format (see `08-Retrospective-Notes.md` — structural question resolved, real-artwork confirmation still pending)
 
 No other episode has been started.
 

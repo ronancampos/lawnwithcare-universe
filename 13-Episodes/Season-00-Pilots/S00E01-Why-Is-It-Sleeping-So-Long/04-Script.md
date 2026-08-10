@@ -5,12 +5,13 @@ depends_on:
 - 03-Story-Blueprint.md
 document: Script
 episode: 01
-last_update: 2026-08-09
+last_update: 2026-08-10
 season: 00
-status: SCRIPT CANDIDATE
+status: SCRIPT LOCK
+supersedes: 04-Script.md v1.0 (six-panel architecture)
 title: S00E01 --- Why Is It Sleeping So Long?
 universe: Lawn With Care Universe
-version: 1.0.0
+version: 2.0.0
 ---
 
 # S00E01 --- Why Is It Sleeping So Long?
@@ -21,25 +22,67 @@ version: 1.0.0
 
 ## Production Format
 
--   6 independent carousel panels
+-   8 independent carousel panels
 -   1080 × 1350 px each
 -   4:5 portrait
--   Dialogue added during controlled composition, not trusted to AI
-    image lettering
+-   Dialogue is locked here and carried into the first draft of every
+    panel (see `06-Visual-Prompts.md`) --- it is no longer treated as
+    a separate pass added only after final art approval
 -   English is the canonical publication language for this pilot
+
+## Revision Note
+
+This script now matches `03-Story-Blueprint.md` v2.0 exactly. Every
+line below is locked (`SCRIPT LOCK`), not a candidate --- there are no
+more "optional if space allows" lines. If a panel turns out to need a
+line cut during production, that is a script revision, not a silent
+drop.
 
 ------------------------------------------------------------------------
 
-# P01 --- Spring Is Waking Up
+# P01 --- The Yard Wakes Up
 
 ## Story Beat
 
-Sprout notices small signs of spring returning.
+The yard itself, caught between winter and spring. No character beat
+yet.
 
 ## Visual Action
 
-Sprout crouches near fresh emerging growth, excitedly examining it.
-Brooks is nearby but secondary.
+Wide establishing shot of the residential yard: fence line,
+stepping-stone path, muted lawn, patches of leftover snow in shaded
+corners, the mystery shrub visible but not yet emphasized. Brooks and
+Sprout may be small figures entering the frame, or absent.
+
+## Dialogue
+
+CAPTION (optional, light):
+
+*"Early spring in the yard."*
+
+No character dialogue.
+
+## Intent
+
+Give the season and setting real visual space before any character
+reaction competes for attention.
+
+## Text Load
+
+None to minimal (caption only).
+
+------------------------------------------------------------------------
+
+# P02 --- Something Is Growing
+
+## Story Beat
+
+Sprout finds a small, specific sign of spring.
+
+## Visual Action
+
+Sprout crouches near fresh green shoots pushing through damp soil.
+Brooks is nearby, secondary.
 
 ## Dialogue
 
@@ -48,8 +91,8 @@ Brooks is nearby but secondary.
 
 ## Intent
 
-Open with wonder and immediately establish Sprout as the active
-observer.
+Open the character-driven part of the episode with wonder; establish
+Sprout as the active observer.
 
 ## Text Load
 
@@ -57,7 +100,7 @@ Very low.
 
 ------------------------------------------------------------------------
 
-# P02 --- The Exception
+# P03 --- The Exception
 
 ## Story Beat
 
@@ -76,23 +119,17 @@ excitement shifts into puzzled concern.
 **SPROUT:**\
 "Why is it sleeping so long?"
 
-## Optional Small Beat
-
-If space allows, the concern may end with:
-
-**SPROUT:**\
-"Is it dead?"
-
-This third line is optional and should be removed if the panel becomes
-text-heavy.
-
 ## Intent
 
 State the episode mystery without explaining it.
 
+## Text Load
+
+Low.
+
 ------------------------------------------------------------------------
 
-# P03 --- What Do You Notice?
+# P04 --- What Do You Notice?
 
 ## Story Beat
 
@@ -116,13 +153,16 @@ look at the shrub.
 
 ## Intent
 
-Shift from assumption to evidence.
+Shift from assumption to evidence. Brooks guides the method rather
+than giving the answer.
 
-Brooks guides the method rather than giving the answer.
+## Text Load
+
+Medium.
 
 ------------------------------------------------------------------------
 
-# P04 --- Look Closer
+# P05 --- Look Closer
 
 ## Story Beat
 
@@ -131,9 +171,8 @@ Sprout investigates.
 ## Visual Action
 
 Sprout uses her magnifying loupe to examine the damaged foliage and
-buds. Brooks remains slightly behind or beside her.
-
-This is the primary Discovery Frame candidate.
+buds. Brooks remains slightly behind or beside her. This is the
+primary Discovery Frame candidate.
 
 ## Dialogue
 
@@ -147,13 +186,16 @@ Then:
 
 ## Intent
 
-Let the artwork carry the investigation.
+Let the artwork carry the investigation. Do not explain the clue
+before the audience has a chance to see it.
 
-Do not explain the clue before the audience has a chance to see it.
+## Text Load
+
+Very low.
 
 ------------------------------------------------------------------------
 
-# P05 --- The Discovery
+# P06 --- This Bud Is Alive!
 
 ## Story Beat
 
@@ -161,8 +203,8 @@ Sprout finds the viable bud.
 
 ## Visual Action
 
-The living bud is clearly visible among damaged foliage. Sprout reacts
-with delighted surprise.
+The living bud is clearly visible among damaged foliage. Sprout
+reacts with delighted surprise.
 
 ## Dialogue
 
@@ -172,39 +214,67 @@ with delighted surprise.
 **BROOKS:**\
 "Good eye, Sprout."
 
-## Optional Brooks Follow-Up
-
-If the composition remains clean:
-
-**BROOKS:**\
-"So what does that tell us?"
-
-This line is optional. It can also become the opening beat of Panel 06.
-
 ## Intent
 
-Sprout owns the discovery.
+Sprout owns the discovery. Brooks praises observation, not
+intelligence.
 
-Brooks praises observation, not intelligence.
+## Text Load
+
+Low--medium.
 
 ------------------------------------------------------------------------
 
-# P06 --- Observe Before You Cut
+# P07 --- Understanding Winter Injury
 
 ## Story Beat
 
-Evidence becomes understanding and care.
+Evidence becomes explanation.
 
 ## Visual Action
 
-Brooks and Sprout remain beside the shrub. Damaged brown foliage is
-still visible. The plant does not magically recover.
+Brooks and Sprout pull back slightly to take in more of the shrub at
+once --- both a damaged, exposed side and a healthier, more sheltered
+side. Brooks gestures toward the whole plant, not just the bud.
 
-## Dialogue --- Preferred Version
+## Dialogue
 
 **BROOKS:**\
-"Winter can dry out exposed parts, even when some of the plant is still
-alive."
+"Winter can dry out exposed parts, even when some of the plant is
+still alive."
+
+**SPROUT:**\
+"So it's not all dead?"
+
+**BROOKS:**\
+"Not all of it. That's why we look closely."
+
+## Intent
+
+Connect the evidence to winter injury without claiming the entire
+plant is healthy or that every brown plant has winter desiccation.
+This is Brooks' own panel to explain in --- it no longer has to share
+space with the care decision or the closing caption.
+
+## Text Load
+
+Medium.
+
+------------------------------------------------------------------------
+
+# P08 --- Look Before You Decide
+
+## Story Beat
+
+Understanding becomes a decision.
+
+## Visual Action
+
+Brooks and Sprout remain beside the shrub, in a calmer, wider shot
+that echoes P01. Damaged brown foliage is still visible. The plant
+does not magically recover.
+
+## Dialogue
 
 **SPROUT:**\
 "So we shouldn't give up on it yet."
@@ -218,10 +288,13 @@ alive."
 
 ## Intent
 
-Connect the evidence to winter injury without claiming that the entire
-plant is healthy or that every brown plant has winter desiccation.
+The final action is cautious observation, not resolution. Lighter
+text load than the old combined panel because the explanation now
+lives in P07.
 
-The final action is cautious observation.
+## Text Load
+
+Medium.
 
 ------------------------------------------------------------------------
 
@@ -229,6 +302,8 @@ The final action is cautious observation.
 
 For rhythm testing:
 
+> CAPTION: *"Early spring in the yard."*
+>
 > **SPROUT:** "Brooks! Look! Everything's waking up!"
 >
 > **SPROUT:** "Except this one... Why is it sleeping so long?"
@@ -246,10 +321,16 @@ For rhythm testing:
 > **BROOKS:** "Winter can dry out exposed parts, even when some of the
 > plant is still alive."
 >
+> **SPROUT:** "So it's not all dead?"
+>
+> **BROOKS:** "Not all of it. That's why we look closely."
+>
 > **SPROUT:** "So we shouldn't give up on it yet."
 >
-> **BROOKS:** "Exactly. Let's watch what grows before we decide what to
-> cut."
+> **BROOKS:** "Exactly. Let's watch what grows before we decide what
+> to cut."
+>
+> CAPTION: *"LOOK CLOSER BEFORE YOU DECIDE."*
 
 ------------------------------------------------------------------------
 
@@ -257,35 +338,23 @@ For rhythm testing:
 
 ## Sprout
 
-The script gives Sprout:
-
--   the opening observation;
--   the mystery;
--   the visible description;
--   the investigation;
--   the key discovery;
--   the care inference.
-
-She is not functioning merely as an exposition prompt.
+The script gives Sprout: the opening observation; the mystery; the
+visible description; the investigation; the key discovery; the "so
+it's not all dead?" bridge into the science; the care inference. She
+is not functioning merely as an exposition prompt.
 
 ## Brooks
 
-Brooks:
-
--   slows the premature conclusion;
--   asks for evidence;
--   stays at Sprout's level;
--   celebrates observation;
--   explains only after discovery;
--   connects knowledge to careful action.
-
-He does not steal the discovery.
+Brooks: slows the premature conclusion; asks for evidence; stays at
+Sprout's level; celebrates observation; explains only after
+discovery, in his own dedicated panel; connects knowledge to careful
+action. He does not steal the discovery.
 
 ------------------------------------------------------------------------
 
 # Science Check
 
-The script intentionally says:
+Unchanged from v1.0. The script intentionally says:
 
 **"Winter can dry out exposed parts..."**
 
@@ -295,7 +364,8 @@ It does not say:
 
 It also says:
 
-**"...some of the plant is still alive."**
+**"...even when some of the plant is still alive"** and **"Not all of
+it."**
 
 It does not say:
 
@@ -306,21 +376,21 @@ what to cut.
 
 ------------------------------------------------------------------------
 
-# Dialogue Density Test
+# Dialogue Density --- Locked
 
-Approximate dialogue distribution:
+-   P01 --- none (caption only)
+-   P02 --- very light (1 line)
+-   P03 --- light (2 lines)
+-   P04 --- medium (3 lines)
+-   P05 --- very light (2 short beats, same line of thought)
+-   P06 --- light (2 lines)
+-   P07 --- medium (3 lines)
+-   P08 --- medium (2 lines + caption)
 
--   P01 --- very light
--   P02 --- light
--   P03 --- medium
--   P04 --- very light
--   P05 --- light
--   P06 --- medium/high
-
-Panel 06 is the primary density test.
-
-If mobile mockups show that P06 requires small typography, split or
-rewrite the explanation rather than shrinking the text.
+No single panel exceeds 3 spoken lines. This is the direct fix for
+the v1.0 retrospective finding that the old six-panel Panel 06 (which
+carried 3 lines plus a caption on top of the science explanation) was
+the format's primary density risk.
 
 ------------------------------------------------------------------------
 
@@ -328,88 +398,86 @@ rewrite the explanation rather than shrinking the text.
 
 ## P01
 
-One Sprout bubble.
+No character bubble. If the caption is used, treat it as a
+title-card-style caption, not a speech bubble.
 
 ## P02
 
-One or two Sprout bubbles.
+One Sprout bubble.
 
 ## P03
 
-Brooks receives the upper dialogue area; Sprout receives a smaller
-response bubble.
+One or two Sprout bubbles.
 
 ## P04
 
-Tiny reaction bubbles only. Preserve the visual clue.
+Brooks receives the upper dialogue area (two short lines); Sprout
+receives a smaller response bubble.
 
 ## P05
 
-Sprout gets the dominant discovery bubble. Brooks gets a small response.
+Tiny reaction bubbles only. Preserve the visual clue.
 
 ## P06
 
-Use short separated bubbles rather than one large paragraph.
+Sprout gets the dominant discovery bubble. Brooks gets a small
+response.
 
-Closing caption should remain visually distinct from character dialogue.
+## P07
+
+Split three ways: Brooks' first line, Sprout's short question, Brooks'
+short answer. Keep each bubble short rather than merging into one
+paragraph.
+
+## P08
+
+Two short separated bubbles (Sprout, then Brooks) rather than one
+large paragraph. Closing caption stays visually distinct from
+character dialogue.
 
 ------------------------------------------------------------------------
 
-# No AI Text Rule
+# Draft-Stage Text Rule
 
-The visual-generation prompt should describe required negative space but
-should not ask the image model to render this exact dialogue.
-
-Final workflow:
-
-1.  generate clean panel;
-2.  approve character and scene consistency;
-3.  add bubbles;
-4.  insert this approved dialogue;
-5.  proofread;
-6.  export 1080 × 1350.
+Per `06-Visual-Prompts.md`, the dialogue above is now included as part
+of each panel's first-draft generation prompt, not deferred to a
+separate lettering stage. See that document's "Text Rule" section for
+the full workflow and its quality-control caveat: AI-rendered text
+inside an image is still unreliable, so a draft's baked-in text is a
+placement/legibility check, not guaranteed final typography. The
+**wording** is locked now, at script stage; the **rendering** may
+still need a controlled correction pass before export.
 
 ------------------------------------------------------------------------
 
 # Script Approval Checklist
 
--   [ ] Sprout owns the central discovery.
--   [ ] Brooks asks before explaining.
--   [ ] Dialogue sounds natural when read aloud.
--   [ ] P04 allows visual silence.
--   [ ] Scientific claim stays cautious.
--   [ ] Living bud is not presented as proof of total plant health.
--   [ ] Brown foliage does not magically recover.
--   [ ] Closing action is observation before pruning.
--   [ ] Text can remain comfortably readable on a phone.
--   [ ] No panel depends on AI-generated lettering.
--   [ ] Relationship Canon is preserved.
+-   [x] Sprout owns the central discovery.
+-   [x] Brooks asks before explaining.
+-   [x] Dialogue sounds natural when read aloud.
+-   [x] P05 allows visual silence.
+-   [x] Scientific claim stays cautious.
+-   [x] Living bud is not presented as proof of total plant health.
+-   [x] Brown foliage does not magically recover.
+-   [x] Closing action is observation before pruning.
+-   [x] Text can remain comfortably readable on a phone (no panel
+    exceeds 3 lines).
+-   [x] No panel depends solely on AI-generated lettering being
+    perfect on the first try --- a correction pass remains available.
+-   [x] Relationship Canon is preserved.
 
 ------------------------------------------------------------------------
 
 # Next Document
 
-`05-Panel-Breakdown.md`
-
-The Panel Breakdown will define, for each 1080 × 1350 image:
-
--   exact composition;
--   camera distance;
--   Brooks position;
--   Sprout position;
--   shrub position;
--   expressions;
--   poses;
--   props;
--   continuity anchors;
--   dialogue-safe areas;
--   Discovery Frame placement;
--   visual do/don't rules.
-
-That document becomes the bridge between script and image prompts.
+`05-Panel-Breakdown.md` --- redefines, for each of the eight 1080 ×
+1350 images: exact composition; camera distance; Brooks position;
+Sprout position; shrub position; expressions; poses; props; scenery
+detail; continuity anchors; dialogue-safe areas; Discovery Frame
+placement; visual do/don't rules.
 
 ------------------------------------------------------------------------
 
 # Status
 
-**SCRIPT CANDIDATE --- v1.0**
+**SCRIPT LOCK --- v2.0 (eight-panel revision)**

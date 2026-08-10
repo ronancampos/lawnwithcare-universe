@@ -10,7 +10,7 @@ season: 00
 status: IN PROGRESS
 title: S00E01 --- Why Is It Sleeping So Long?
 universe: Lawn With Care Universe
-version: 0.1.0
+version: 0.2.0
 ---
 
 # S00E01 --- Why Is It Sleeping So Long?
@@ -19,9 +19,19 @@ version: 0.1.0
 
 ## Purpose
 
-`03-Story-Blueprint.md` ("Pilot Experiment Notes") asks explicitly: if Panel 06 becomes overloaded with dialogue, document that finding for the Season 00 retrospective before the six-panel carousel format is locked for future episodes. This document is that retrospective, started while S00E01 is still in production so findings aren't lost before final review.
+`03-Story-Blueprint.md` v1.0 ("Pilot Experiment Notes") asked explicitly: if Panel 06 becomes overloaded with dialogue, document that finding for the Season 00 retrospective before the six-panel carousel format is locked for future episodes. This document is that retrospective, started while S00E01 was still in production so findings weren't lost before final review.
 
 This is a living document. Update it as each open question below gets resolved, then change status from `IN PROGRESS` to `COMPLETE` before starting S00E02.
+
+---
+
+## Resolution (2026-08-10) --- Six Panels → Eight Panels
+
+Before Test 05 could be confirmed against real lettered artwork, production direction moved to expand the format from six to eight panels and lock dialogue at script stage. This is a direct, if earlier-than-planned, answer to the open question this document was tracking: **the old Panel 06 was overloaded** (three lines of dialogue plus a closing caption on top of carrying the science explanation), and the fix applied is exactly what the "Preliminary Recommendation" below already anticipated --- **split the beat across an extra panel rather than shrinking typography.**
+
+Concretely: old Panel 06 (UNDERSTAND + CARE + CLOSE) is now two panels --- new P07 (UNDERSTAND, 3 lines) and new P08 (CARE + CLOSE, 2 lines + caption) --- and a new dedicated environment-establishing panel (new P01) was added at the open. See `03-Story-Blueprint.md` v2.0 for the full architecture and its "Artwork Migration Note," and `06-Visual-Prompts.md` v2.0 for the companion change: dialogue is now included in every panel's first-draft prompt instead of added in a separate lettering pass.
+
+This supersedes the "Too early to conclude" verdict below for the *structural* question (whether to split). It does **not** yet resolve Test 05 itself --- that still needs confirmation against real eight-panel draft artwork, which does not exist yet. The six-panel findings below are kept as historical record, not deleted, since they're still valid evidence about what worked in the original structure.
 
 ---
 
@@ -75,19 +85,20 @@ This is a living document. Update it as each open question below gets resolved, 
 
 ---
 
-## Six-Panel Format --- Preliminary Recommendation
+## Six-Panel Format --- Preliminary Recommendation (superseded, kept for record)
 
-**Too early to conclude.** Hold the format decision for S00E02 until Test 05 and Test 07 above have real data (post-lettering). If P06 turns out to require shrinking the three-line exchange plus caption to fit, that is itself the signal the Story Blueprint asked to watch for — the fix should be splitting the beat across an extra panel, not shrinking typography (per the Blueprint's explicit instruction).
+*Original note, 2026-08-10, superseded same day by the Resolution above:* "Too early to conclude. Hold the format decision for S00E02 until Test 05 and Test 07 above have real data (post-lettering). If P06 turns out to require shrinking the three-line exchange plus caption to fit, that is itself the signal the Story Blueprint asked to watch for — the fix should be splitting the beat across an extra panel, not shrinking typography." Production direction acted on this reasoning ahead of having the post-lettering data, based on inspection of the dialogue load alone. Test 05 still needs real confirmation against the new eight-panel drafts.
 
 ---
 
 ## Next Steps
 
-1. Complete lettering for at least P06 (the highest-risk panel) and re-evaluate Test 05.
-2. Resolve the Brooks hair/hat discrepancy (regenerate or document as an approved exception).
-3. Fill in Test 07 regeneration reasons retroactively if still recoverable from production history.
-4. Flip status to `COMPLETE` and fold the verdict into `PROJECT_STATUS.md` before starting S00E02.
+1. Generate the eight-panel draft set per `06-Visual-Prompts.md` v2.0 (dialogue included), starting with an updated environment/shrub/yard reference.
+2. Evaluate Test 05 (mobile dialogue fit) against the real P01–P08 drafts, with particular attention to P07 and P08 — the direct descendants of the panel this retrospective originally flagged.
+3. Resolve the Brooks hair/hat discrepancy (regenerate or document as an approved exception) — still open, unaffected by the panel-count change.
+4. Fill in Test 07 regeneration reasons for the eight-panel set as they occur, rather than retroactively.
+5. Flip status to `COMPLETE` and fold the verdict into `PROJECT_STATUS.md` before starting S00E02.
 
 ---
 
-Status: **IN PROGRESS --- v0.1**
+Status: **IN PROGRESS --- v0.2 (eight-panel revision noted; awaiting real draft artwork to close remaining open tests)**
