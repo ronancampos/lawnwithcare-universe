@@ -18,6 +18,7 @@ Official production folder for the first Lawn With Care Universe pilot episode.
 6. [Visual Prompts](06-Visual-Prompts.md)
 7. [Production Checklist](07-Production-Checklist.md)
 8. [Retrospective Notes](08-Retrospective-Notes.md)
+9. [Codex Draft Generation Brief](09-Codex-Draft-Generation.md)
 
 ## Assets
 
