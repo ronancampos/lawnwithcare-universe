@@ -545,6 +545,25 @@ Next character pipeline:
 
 ---
 
+# Open Finding — S00E01 Pilot Panels (2026-08-10)
+
+Logged during review of `13-Episodes/Season-00-Pilots/S00E01-Why-Is-It-Sleeping-So-Long/Assets/Panels/Clean/` (P04-v2.0, P06-v2.0).
+
+**Issue:** Brooks' hair reads as visible beneath the campaign hat in some angles.
+
+**Conflicts with:** the Face requirement above — "no visible hairstyle when hat is worn" (status `APPROVED`).
+
+**Disposition:** `OPEN — NOT YET RESOLVED.` This is a Character Drift risk of the type this audit exists to catch. Do not treat the current S00E01 panels as visually final until one of the following happens:
+
+1. the panels are regenerated/corrected to match the approved Face rule, or
+2. the project owner explicitly approves the current art as a documented exception, which would then require updating this rule rather than leaving it silently contradicted.
+
+See `13-Episodes/Season-00-Pilots/S00E01-Why-Is-It-Sleeping-So-Long/08-Retrospective-Notes.md` (Test 02) for tracking.
+
+---
+
 Status:
 
 `AUDIT COMPLETE — BROOKS PRODUCTION READY v1.0`
+
+`ONE OPEN FINDING PENDING — SEE ABOVE (2026-08-10)`
