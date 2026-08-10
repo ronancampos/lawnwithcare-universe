@@ -187,12 +187,31 @@ dramatic fantasy decay.
 
 ## Logo and Brand Lock
 
-Do not ask the image generator to reproduce the Lawn With Care logo.
-Composite the official source asset afterward if required. Never
-generate or approximate extra leaves, altered open-frame geometry,
-substitute typography, circular logo versions, or invented Lawn With
-Care symbols. Overt branding is not required inside the generated
-scene for this episode.
+**Superseded 2026-08-10 --- see below.** This section originally said
+not to ask the generator to reproduce the logo at all. That
+instruction directly contradicted a later production decision and
+caused several rounds of inconsistent Brooks artwork (full story in
+`08-Retrospective-Notes.md`). Two explicit modes now exist; pick one
+per asset and don't mix them mid-panel-set:
+
+**`DRAFT_MATCH_MASTER`** (active mode for S00E01's story panels): reproduce
+Brooks' full approved appearance, branding included, faithfully
+matching `Brooks-Master-Model-Sheet-v1.0.png`. This is not a request
+for pixel-perfect official artwork --- it's a request for consistency
+with the one approved character reference. Never generate or
+approximate extra leaves, altered open-frame geometry, substitute
+typography, circular logo versions, or invented Lawn With Care
+symbols beyond what the Master Model Sheet already shows.
+
+**`FINAL_BRAND_EXACT`** (for any asset requiring guaranteed-accurate
+official branding, e.g. marketing material): generate with the badge
+area reserved/plain, then composite the real
+`00-Franchise/Brand/Logos/` asset using
+`05-AI/Scripts/composite_logo.py`. Do not trust AI generation for
+pixel-exact brand reproduction in this mode.
+
+Do not silently switch an asset from one mode to the other --- that
+ambiguity is exactly what caused the earlier rework.
 
 ------------------------------------------------------------------------
 

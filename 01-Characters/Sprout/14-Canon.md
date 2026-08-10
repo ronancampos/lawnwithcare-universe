@@ -521,6 +521,28 @@ She simply refuses to stop wondering.
 
 ---
 
+# Known Reference Asset Issue (2026-08-10)
+
+`Assets/Model-Sheets/Sprout-Master-Model-Sheet-v1.0.png`'s "Size
+Comparison" panel shows Sprout at **112 cm**, contradicting the
+130--135 cm operational height used everywhere else in her canon (this
+document, `Relationship-Canon.md`, episode production documents). That
+same panel also includes a second depiction of Brooks, which is
+outside Sprout's own sheet's scope.
+
+Found during an S00E01 image-generation pipeline audit
+(2026-08-10) --- flagged here rather than silently corrected, since it
+affects an approved reference asset. Does not currently block
+production: text-based height locks in generation prompts already
+override it, and the sheet's front-view turnaround (face, hair,
+outfit) is unaffected. Sprout also does not yet have a Visual Canon
+Audit document the way Brooks does
+(`01-Characters/Brooks/Assets/References/Audits/Brooks-Visual-Canon-Audit-v1.0.md`)
+--- creating one, and deciding whether to regenerate the Size
+Comparison panel, is a separate task for the project owner.
+
+---
+
 Status
 
 CANON v1.0

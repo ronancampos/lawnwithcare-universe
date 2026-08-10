@@ -38,6 +38,14 @@ more "optional if space allows" lines. If a panel turns out to need a
 line cut during production, that is a script revision, not a silent
 drop.
 
+**Continuity fix (2026-08-10):** P04 originally opened with "Maybe.
+But let's not guess yet." The eight-panel split left nothing in P03
+for that "Maybe" to respond to (P03 only states the mystery question,
+not an explicit hypothesis) --- a dangling reference introduced by the
+six-to-eight-panel restructure, caught during an image-generation
+pipeline audit. Fixed by dropping "Maybe." rather than adding a
+hypothesis line to P03, to avoid growing P03's dialogue load.
+
 ------------------------------------------------------------------------
 
 # P01 --- The Yard Wakes Up
@@ -143,7 +151,7 @@ look at the shrub.
 ## Dialogue
 
 **BROOKS:**\
-"Maybe. But let's not guess yet."
+"Let's not guess yet."
 
 **BROOKS:**\
 "What do you notice?"
@@ -308,7 +316,7 @@ For rhythm testing:
 >
 > **SPROUT:** "Except this one... Why is it sleeping so long?"
 >
-> **BROOKS:** "Maybe. But let's not guess yet. What do you notice?"
+> **BROOKS:** "Let's not guess yet. What do you notice?"
 >
 > **SPROUT:** "The outside looks brown and dry."
 >

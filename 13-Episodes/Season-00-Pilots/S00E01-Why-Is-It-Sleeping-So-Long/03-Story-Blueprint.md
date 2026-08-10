@@ -366,7 +366,7 @@ investigates.**
 
 ## Dialogue
 
-BROOKS: "Maybe. But let's not guess yet."
+BROOKS: "Let's not guess yet."
 
 BROOKS: "What do you notice?"
 

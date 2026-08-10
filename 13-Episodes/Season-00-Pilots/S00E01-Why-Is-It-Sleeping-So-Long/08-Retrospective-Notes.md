@@ -7,10 +7,10 @@ document: Retrospective Notes
 episode: 01
 last_update: 2026-08-10
 season: 00
-status: IN PROGRESS
+status: FIRST DEFINITIVE CUT APPROVED
 title: S00E01 --- Why Is It Sleeping So Long?
 universe: Lawn With Care Universe
-version: 0.7.0
+version: 1.0.0
 ---
 
 # S00E01 --- Why Is It Sleeping So Long?
@@ -325,4 +325,104 @@ opposite approach.
 
 ---
 
-Status: **IN PROGRESS --- v0.7 (Brooks logo/badge consistency resolved across all 7 panels via Round 6; only P03's badge text needs an optional cleanup pass)**
+## Pipeline Audit and Overhaul (2026-08-10)
+
+With the Round 6 fix working, the owner asked for a critical review of
+the whole image-generation pipeline to reduce rework on future
+episodes. An audit (run via Codex, ~10 minutes, no files changed
+during the audit itself) found the rework across Rounds 1--6 wasn't
+caused by under-detailed prompts --- it was caused by three structural
+problems:
+
+1. **No single resolved prompt per panel.** `09-Codex-Draft-Generation.md`
+   had accumulated six rounds of patches; the "correct" instruction
+   lived in a note at the top while the actual executable prompt
+   blocks below it still contained the superseded "completely plain,
+   no branding" language from Rounds 2--5 (confirmed: 11+ occurrences
+   found via `grep` after the audit). Two people running "the same"
+   document could get opposite results depending which block they
+   copied.
+2. **Reference images with competing or ambiguous roles.** Verified
+   directly: `Sprout-Master-Model-Sheet-v1.0.png` contains a second
+   depiction of Brooks and annotates Sprout at a non-canonical 112 cm
+   (operational canon is 130--135 cm). `Brooks-Sprout-Relationship-Scale-Sheet-v1.0.png`
+   contains roughly 15 independently-generated Brooks/Sprout
+   vignettes --- each one a separate opportunity for drift --- despite
+   being treated as one reference. Any generation call that included
+   these alongside the Master Model Sheets was effectively showing the
+   model multiple different "Brooks" and "Sprout" references at once.
+3. **No reproducible process.** Attempts overwrote each other in
+   place with no record of what prompt or reference set produced a
+   given result, no preflight check for known failure language, and no
+   automated technical QA before human review.
+
+**Fixes applied:**
+
+- `09-Codex-Draft-Generation.md` rewritten from scratch as v3.0: one
+  fully-resolved prompt per panel, built from named locked blocks
+  (`BROOKS_LOCK`, `SPROUT_LOCK`, `RELATIONSHIP_LOCK`, etc.) defined
+  once and never duplicated with drift. All six rounds of prior patch
+  history removed from the file (still available in git history and
+  in this document).
+- `06-Visual-Prompts.md`'s "Logo and Brand Lock" rewritten to declare
+  two explicit modes --- `DRAFT_MATCH_MASTER` (reproduce the Master
+  Model Sheet faithfully, marks included --- active for S00E01) and
+  `FINAL_BRAND_EXACT` (reserve the area, composite the real asset) ---
+  so the branding question can't silently flip again.
+- `Relationship-Canon.md` updated: the Relationship Scale Sheet is now
+  documented as QA/staging reference only, never a generation input.
+- Sprout's 112 cm / embedded-Brooks defect logged in
+  `01-Characters/Sprout/14-Canon.md` ("Known Reference Asset Issue")
+  rather than silently corrected --- it's an approved asset, so fixing
+  it is the owner's call.
+- P04's script had a dangling reference ("Maybe. But let's not guess
+  yet." with nothing in P03 for "Maybe" to answer, introduced when the
+  six-panel structure split into eight) --- fixed in `04-Script.md`,
+  `03-Story-Blueprint.md`, and `05-Panel-Breakdown.md`.
+- Two new tools in `05-AI/Scripts/`: `preflight_check.py` (catches
+  stale branding language, competing character references, and
+  accidental output overwrite before a generation call runs ---
+  verified against both the exact failure patterns from this episode)
+  and `crop_image.py` (produces single-purpose operational crops from
+  multi-figure contact sheets, for future use per the "Future
+  Optimization" list in `09-Codex-Draft-Generation.md`).
+
+**Not yet done** (logged as P1/P2 in the audit, tracked in
+`09-Codex-Draft-Generation.md`'s "Future Optimization" section):
+operational environment-reference crops, deterministic (non-generative)
+lettering, a generation manifest with reference-file hashes, automated
+technical QA (dimensions/format/naming), and immutable per-attempt
+file naming instead of in-place overwrite.
+
+**Governing lesson, worth carrying into every future episode:** when a
+reference image and a text instruction disagree, the reference wins,
+unreliably. Don't fight a reference with contradicting text --- pick
+or build a reference that already shows what you want, and describe
+it as "match this faithfully."
+
+---
+
+## First Definitive Cut Approved (2026-08-10)
+
+Owner reviewed the corrected 8-panel set and approved it as S00E01's
+first definitive story. All 8 panels promoted from `Assets/Drafts/`
+to `Assets/Final/S00E01-P01.png` through `S00E01-P08.png`. Tagged in
+git as a production milestone (see repository tags).
+
+Known open item, explicitly accepted as non-blocking: P03's sleeve
+badge text renders slightly illegibly. Everything else --- character
+consistency, dialogue accuracy, spring color palette, scientific
+accuracy of the shrub, Brooks' marks matching his Master Model Sheet
+--- passed review across all 8 panels.
+
+**Not yet done, deliberately deferred past this milestone:** social
+export/cropping for the actual Instagram post, and the "Future
+Optimization" list in `09-Codex-Draft-Generation.md` (operational
+reference crops, deterministic lettering, generation manifest,
+automated technical QA, immutable attempt naming). None of these
+block calling this set the episode's first definitive cut --- they
+improve the *next* episode's production speed.
+
+---
+
+Status: **FIRST DEFINITIVE CUT APPROVED --- v1.0 (all 8 panels promoted to Assets/Final/; pipeline overhaul complete; remaining items are deferred polish/tooling, not blockers)**

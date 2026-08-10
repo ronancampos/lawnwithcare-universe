@@ -1019,6 +1019,17 @@ Primary shared visual reference:
 
 `Brooks-Sprout-Relationship-Scale-Sheet-v1.0.png`
 
+**Usage note (2026-08-10):** this sheet is for **QA and staging
+guidance only** --- scale ratio, eye-line, composition principles. Do
+not feed it to an image generator as a character reference. It
+contains roughly 15 independently-generated vignettes of Brooks (and
+Sprout), each subject to the same generation drift as any other
+single image, so as a generation input it functions as multiple
+competing, slightly-inconsistent "Brooks" references rather than one
+authoritative one. For actual generation, use only each character's
+Master Model Sheet; encode scale (`Brooks ≈ 188 cm, Sprout ≈ 130--135
+cm`) and eye-line rules as text in the prompt instead.
+
 Individual appearance remains governed by each character's respective Master Model Sheet and Canon.
 
 Official Lawn With Care branding remains governed by:

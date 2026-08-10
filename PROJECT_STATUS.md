@@ -219,11 +219,11 @@ Pending
 
 Status:
 
-**IN PRODUCTION** — S00E01 pilot
+**FIRST DEFINITIVE CUT APPROVED** — S00E01 pilot
 
 S00E01 — "Why Is It Sleeping So Long?" (`13-Episodes/Season-00-Pilots/S00E01-Why-Is-It-Sleeping-So-Long/`)
 
-Revised 2026-08-10: expanded from 6 to 8 panels, with dialogue now locked and included in first-draft prompts instead of a later overlay pass. See `03-Story-Blueprint.md` v2.0, `04-Script.md` v2.0, `05-Panel-Breakdown.md` v2.0, `06-Visual-Prompts.md` v2.0, and `08-Retrospective-Notes.md` for the reasoning (the original six-panel closing beat was overloaded).
+2026-08-10: all 8 panels approved and promoted to `Assets/Final/S00E01-P01.png` through `P08.png`. Eight-panel structure, dialogue locked and rendered in first drafts, Brooks' brand marks consistent with his Master Model Sheet across the full set, spring color palette, scientifically accurate shrub. Full production history (six-panel → eight-panel revision, the Brooks logo/badge investigation across several rounds, and the resulting pipeline audit) is in `08-Retrospective-Notes.md`.
 
 Complete:
 
@@ -233,33 +233,27 @@ Complete:
 
 ✔ Story Blueprint (`STORY LOCK CANDIDATE`, v2.0, eight-panel architecture)
 
-✔ Script (`SCRIPT LOCK`, v2.0, dialogue fully locked for all 8 panels)
+✔ Script (`SCRIPT LOCK`, v2.0, dialogue fully locked; P04 continuity fix applied)
 
 ✔ Panel Breakdown (`VISUAL PLANNING`, v2.0, expanded scenery/environment detail)
 
-✔ Visual Prompts (`READY FOR VISUAL TESTING`, v2.0, dialogue included in first-draft prompts)
+✔ Visual Prompts (`READY FOR VISUAL TESTING`, v2.0, two-mode branding policy)
 
-Superseded by the revision (kept for reference, not satisfying the new structure):
+✔ Codex Draft Generation Brief (`READY FOR EXECUTION`, v3.0 — single resolved prompt per panel, rewritten after a pipeline audit found accumulated contradictions in earlier rounds)
 
-⚠ Environment/shrub continuity reference (v1.0) — needs regeneration/extension to cover the fence/path/leftover-snow layout and the shrub's healthier side needed for the new P07
+✔ All 8 final panels approved and in `Assets/Final/`
 
-⚠ Clean draft artwork for the old 6 panels (v1.0/v2.0) — does not map 1:1 onto the new 8-panel structure; see `03-Story-Blueprint.md`, "Artwork Migration Note"
+Known non-blocking item: P03's sleeve badge text renders slightly illegibly (optional touch-up, does not require regeneration).
 
 Pending:
 
-□ Formal creative sign-off on each pipeline document (documents are complete but none are marked fully `APPROVED`; see `07-Production-Checklist.md`)
+□ Social asset export/cropping from `Assets/Final/` for the actual Instagram carousel post
 
-□ Generate the new P01–P08 draft artwork (with dialogue included per the updated workflow)
+□ Formal status-label bump on `01-Concept.md` (still says `IN DEVELOPMENT` despite being load-bearing and now shipped)
 
-□ Final panel review against Master Model Sheets (one open finding carried over: Brooks' hair reads as visible under the hat in some panels — see the Brooks Visual Canon Audit)
+□ Pipeline tooling for the next episode (operational reference crops, deterministic lettering, generation manifest, automated technical QA — see `09-Codex-Draft-Generation.md`, "Future Optimization")
 
-□ Text-rendering correction pass workflow (per the updated "Text Rule")
-
-□ Final 1080×1350 export
-
-□ Social assets
-
-□ Season 00 retrospective on the eight-panel carousel format (see `08-Retrospective-Notes.md` — structural question resolved, real-artwork confirmation still pending)
+□ Sprout Visual Canon Audit (doesn't exist yet; Brooks has one). Related: Sprout's Master Model Sheet has a known defect (112 cm annotation, embedded second Brooks figure) logged in `01-Characters/Sprout/14-Canon.md`.
 
 No other episode has been started.
 
@@ -705,15 +699,15 @@ Storytelling
 
 Episodes
 
-███████░░░ ~70% (S00E01 pilot: pipeline + draft art done; sign-off, lettering, export pending)
+█████████░ ~90% (S00E01 pilot: all 8 panels approved and in Assets/Final/; social export still pending)
 
 Production
 
-░░░░░░░░░░ 0% (no lettered/exported/final/social assets yet)
+███░░░░░░░ ~30% (S00E01's Final panels exist; social/Instagram export workflow and lettering tooling for future episodes still pending)
 
 Overall Project
 
-≈ 62%
+≈ 68%
 
 These percentages are estimates for orientation, not a tracked metric — update them by hand when a section materially changes.
 
