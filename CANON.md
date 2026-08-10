@@ -79,6 +79,10 @@ If this index and a linked document ever disagree, the linked document wins — 
 - `AGENTS.md` — repository agent operating manual; governs how AI and coding agents work in this repository (canon-change policy, git safety, approval boundaries)
 - Episode pipeline (per episode) — `13-Episodes/<Season>/<Episode>/01-Concept.md` through the episode's final production documents
 
+## 6. Publishing / marketing
+
+- `07-Marketing/01-Instagram-Guidelines.md` — account setup, caption voice and formula, hashtag strategy, publishing checklist. `APPROVED` operational guidance, not franchise canon; must stay consistent with `Storytelling-DNA.md`'s tone.
+
 ---
 
 ## Known gaps — do not silently fill
