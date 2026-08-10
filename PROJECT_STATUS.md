@@ -255,7 +255,21 @@ Pending:
 
 □ Sprout Visual Canon Audit (doesn't exist yet; Brooks has one). Related: Sprout's Master Model Sheet has a known defect (112 cm annotation, embedded second Brooks figure) logged in `01-Characters/Sprout/14-Canon.md`.
 
-No other episode has been started.
+---
+
+S00E02 — "Why Does the Ground Need to Breathe?" (`13-Episodes/Season-00-Pilots/S00E02-Why-Does-the-Ground-Need-to-Breathe/`)
+
+Status: **SCRIPT LOCK, ready for image generation.** Category: Soil & Roots (soil compaction/aeration). Uses a consolidated 3-document structure (Concept+LO, Blueprint+Script, Codex brief) instead of S00E01's 7, per the pipeline lessons in S00E01's retrospective. Badge used: existing "Soil Detective" (no new badge invented). Adapted from an owner-supplied external draft that used an unnamed mascot and a non-canonical badge system — reconciled to Brooks/Sprout canon.
+
+S00E03 — "Too Much Love Can Drown a Root" (`13-Episodes/Season-00-Pilots/S00E03-Too-Much-Love-Can-Drown-a-Root/`)
+
+Status: **SCRIPT LOCK, ready for image generation.** Category: Water & Care (overwatering / roots need air too). Badge used: existing "Moisture Tracker." Same origin/adaptation note as S00E02.
+
+S00E04 — "The Day Two Rangers Met" (`13-Episodes/Season-00-Pilots/S00E04-The-Day-Two-Rangers-Met/`)
+
+Status: **⚠ PROPOSED — NOT YET CANON.** Origin-story episode (how Brooks and Sprout's partnership began) — `Relationship-Canon.md` does not currently define this, and producing the episode does not make it canon. Requires explicit owner approval before publication or before `Relationship-Canon.md` is updated to reference it. Script/art pipeline is otherwise complete and ready for generation as a production test. See the episode's `README.md`, "Canon Status."
+
+No other episodes have been started.
 
 ---
 

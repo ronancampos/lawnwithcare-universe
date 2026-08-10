@@ -843,6 +843,24 @@ The six-panel structure is experimental, not yet a permanent standard.
 
 ------------------------------------------------------------------------
 
+# Subsequent Pilots (added 2026-08-10)
+
+S00E01 validated an eight-panel structure with dialogue locked into
+first-draft generation (see its `08-Retrospective-Notes.md`). S00E02
+and S00E03 reuse that validated structure directly, and consolidate
+the seven-document pipeline into three documents per episode (Concept
++ Learning Objective; Story Blueprint + Script; Codex Draft Generation
+Brief) --- a documented refinement under this charter's "Recommended
+Episode Directory" allowance, not a silent change.
+
+S00E04 is a fourth pilot with a different purpose: it is explicitly
+`PROPOSED, NOT YET CANON` --- it tests the production system on a
+character-origin story rather than a science-discovery story, and its
+premise (how Brooks and Sprout met) requires explicit owner approval
+before becoming part of `Relationship-Canon.md`. See its own `README.md`.
+
+------------------------------------------------------------------------
+
 # Final Principle
 
 Season 00 exists to discover the production system.
