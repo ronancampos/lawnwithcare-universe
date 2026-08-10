@@ -71,7 +71,8 @@ If this index and a linked document ever disagree, the linked document wins — 
 - Storytelling DNA (emotional structure / narrative rhythm) — `Storytelling-DNA.md`
 - Story Bible — `03-Storytelling/00-Story-Bible.md`
 - Episode Structure — `03-Storytelling/01-Episode-Structure.md`
-- Writers' Room Guide — `03-Storytelling/10-Writer-Room-Guide.md`
+- Writers' Room Guide — `03-Storytelling/10-Writer-Room-Guide.md` (internal production manual)
+- AI Brainstorm Story Bible — `03-Storytelling/11-AI-Brainstorm-Story-Bible.md` (portable, self-contained reference for brainstorming new episodes with external AI tools, outside this repository) + `03-Storytelling/12-Brainstorm-Kickoff-Prompt.md` (ready-to-paste prompts). Anything generated from these is a draft proposal, not canon, until approved.
 - **Gap:** `03-Storytelling/02-Dialogue.md` through `09-Season-Structure.md` (Dialogue, Humor, Educational Framework, Pacing, Discovery Moments, Narration, Panel Language, Season Structure) are empty. This matches the ~25% Storytelling completion tracked in `PROJECT_STATUS.md`.
 
 ## 5. Production / operating rules
