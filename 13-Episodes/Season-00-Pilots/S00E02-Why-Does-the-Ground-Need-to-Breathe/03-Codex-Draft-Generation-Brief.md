@@ -45,7 +45,7 @@ Hierarchy").
 | `01-Characters/Brooks/Assets/Model-Sheets/Brooks-Master-Model-Sheet-v1.0.png` | Brooks' identity: face, proportions, silhouette, wardrobe, mark *placement*. | Required. |
 | `01-Characters/Sprout/Assets/Model-Sheets/Sprout-Master-Model-Sheet-v1.0.png` | Sprout | Ignore the "Size Comparison" panel (112 cm defect) --- see `01-Characters/Sprout/14-Canon.md`. Required. |
 | `13-Episodes/Season-00-Pilots/S00E02-Why-Does-the-Ground-Need-to-Breathe/Assets/References/S00E02-Environment-Reference-v1.0.png` | Yard layout, worn-path/healthy-lawn contrast | Generate this first (Step 0 below) before any panel. Required. |
-| `00-Franchise/Brand/Logos/04-icon-dark.png` (or `05-icon-light.png`) | The official Lawn With Care icon's *exact geometry only* (frame, leaf, letterform) --- not Brooks' identity. | Optional but recommended (confirmed working 2026-08-11, S00E02 P02.1). Only add this alongside the "Icon wording fix" note in `BROOKS_LOCK` below --- without it, this reference competes with the Master Model Sheet's own approximation instead of clarifying it. |
+| `00-Franchise/Brand/Logos/04-icon-dark.png` (or `05-icon-light.png`) | The official Lawn With Care icon's *exact geometry only* (frame, leaf, letterform) --- not Brooks' identity. | Worked once, on P02.1 --- **not adopted as the standing rule.** The project owner reconfirmed on S00E03 (2026-08-11) that the Master Model Sheet alone remains the default; see `Brooks-Visual-Canon-Audit-v1.0.md`, "Standing Rule Reconfirmed." Left here as historical record of what this episode actually used, not as a recommendation for future episodes. |
 
 **Do not use:** the Relationship Scale Sheet (QA-only, never a
 generation input --- see `Relationship-Canon.md`) or the Brooks

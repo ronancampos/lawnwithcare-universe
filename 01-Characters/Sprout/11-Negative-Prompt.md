@@ -28,7 +28,7 @@ This is a production tool, not canon. Sprout does not yet have a written `15-Des
 - Straightened or radically changed hair; altered eye color; removed or altered freckles.
 - A generic scout uniform replacing her specific outfit (cream field shirt, olive-green shorts, green headband, brown outdoor boots).
 - A redesigned Discovery Band.
-- Invented additional badges without separate canon approval (per `14-Canon.md` — "Badge Rule": a generated badge is `NON-CANON / PROPOSED` until approved).
+- Invented additional badges without separate canon approval (per `14-Canon.md` — "Badge Rule": a generated badge is `NON-CANON / PROPOSED` until approved). **Season 00 exception, confirmed by the project owner 2026-08-11:** unrequested badge icons appearing on the Discovery Band in a Season 00 pilot draft (e.g. `S00E03-P02`) may be accepted as non-canon decoration without regeneration, per `Season-00-Pilots/README.md`'s "Discovery Band" section (badges introduced during a pilot are not automatically canon). This tolerance ends at Season 01 --- from `S01E01` onward, invented badges are a reject, not an accepted exception.
 - An oversized magnifying loupe that obscures her face.
 - A third arm or extra hand — found 2026-08-11 (S00E02 P06): when a pose needs both of Sprout's hands doing something else (soil, gesture), the generator invented a third arm rather than let go of the loupe. Fix: explicitly state the loupe hangs from its Discovery Band cord instead of being held whenever both hands are occupied.
 - A second, disconnected bare-soil patch elsewhere in the grass — the episode's environment reference establishes exactly one worn path; any other "bare ground" reads as an unintended second patch, not a valid healthy-soil touch point.

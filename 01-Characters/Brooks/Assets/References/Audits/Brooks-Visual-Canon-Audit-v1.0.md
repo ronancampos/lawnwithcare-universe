@@ -647,8 +647,30 @@ Logged during review of `13-Episodes/Season-00-Pilots/S00E02-Why-Does-the-Ground
 
 ---
 
+# Standing Rule Reconfirmed — Master Model Sheet Only, No Competing Brand-Asset Reference (2026-08-11, S00E03)
+
+The optional "attach `04-icon-dark.png` scoped to geometry-only" pattern that worked on S00E02 P02.1 is **not** the go-forward default. On S00E03 P03, the project owner reconfirmed the simpler standing rule this audit already documented as S00E01's final resolution (see "Final resolution (2026-08-10)" above): `Brooks-Master-Model-Sheet-v1.0.png` is the only Brooks reference, full stop --- no unbranded variant, no competing official-asset reference, regardless of how narrowly its role is worded in the prompt.
+
+This does not erase the S00E02 finding immediately above --- it did produce a clean result there. It means: don't reach for a second reference file as the default fix when the icon drifts (missing letterform, wrong frame shape, etc.). Default to strengthening the prompt's text description of the icon's construction first, using only the Master Model Sheet. Both S00E02's and S00E03's Codex Draft Generation Briefs have been updated to reflect this.
+
+---
+
+# Resolved — Icon Construction Wording, Text-Only Fix (2026-08-11, S00E03)
+
+Following directly from the reconfirmed rule above, S00E03 P03 needed 3 regeneration rounds to get the icon right using only the Master Model Sheet (no second reference file):
+
+1. Plain `[L] icon` wording → closed gold-monochrome square, no visible letter.
+2. Generic spelled-out wording ("the official Lawn With Care icon") → letter present, two-color contrast partly right, frame still closed and gold.
+3. Full line-by-line construction wording (three-line open-top frame, green frame + leaf, white letter, explicit bans on gold/closed-square) → clean, correct result.
+
+That round-3 wording was then baked into `BROOKS_LOCK` and every remaining panel's inline Brooks description in S00E03's Codex Draft Generation Brief. It held clean automatically across P04, P05, P06, P07, and P08 --- five consecutive panels with zero further reinforcement needed. This is now the proven, adopted wording for all future episodes; copy it from S00E03's `BROOKS_LOCK` rather than re-deriving it.
+
+**Disposition:** `RESOLVED.` Confirmed across a full 8-panel episode using only the Master Model Sheet reference, consistent with the standing rule above.
+
+---
+
 Status:
 
 `AUDIT COMPLETE — BROOKS PRODUCTION READY v1.0`
 
-`ONE OPEN FINDING PENDING (2026-08-10, hair/hat) — ICONS SHEET CHEST-PIN CONTRADICTION LOGGED 2026-08-11, WORKAROUND APPLIED, SOURCE ASSET NOT YET CORRECTED — LOGO/BADGE PLACEMENT RESOLVED (2026-08-10, ROUND 6) — ICON WORDING/REFERENCE-HIERARCHY FIX RESOLVED, CONFIRMED ACROSS FULL S00E02 SET (2026-08-11) — FRECKLE INTERMITTENCY OPEN AND ACCEPTED AS A KNOWN RISK (2026-08-11), NOT A SOLVED PROBLEM`
+`ONE OPEN FINDING PENDING (2026-08-10, hair/hat) — ICONS SHEET CHEST-PIN CONTRADICTION LOGGED 2026-08-11, WORKAROUND APPLIED, SOURCE ASSET NOT YET CORRECTED — LOGO/BADGE PLACEMENT RESOLVED (2026-08-10, ROUND 6) — MASTER MODEL SHEET ONLY RECONFIRMED AS DEFAULT (2026-08-11, S00E03) — ICON CONSTRUCTION WORDING RESOLVED, CONFIRMED ACROSS FULL S00E03 SET USING TEXT-ONLY FIX (2026-08-11) — FRECKLE INTERMITTENCY OPEN AND ACCEPTED AS A KNOWN RISK (2026-08-11); NOT REPRODUCED AT ALL ACROSS S00E03'S 8 PANELS, STILL TREATED AS UNRESOLVED RATHER THAN FIXED`

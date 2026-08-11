@@ -441,6 +441,8 @@ This is a refinement of, not a reversal of, the S00E01 finding under "Reference 
 
 **Operational caveat (do not skip this when generating by hand in a chat UI):** naming a reference file's path in the prompt text does not cause an image generator to see that file. This repository's scripted pipeline (`05-AI/Scripts/generate_image.py` / `preflight_check.py --ref ...`) already attaches reference images as real inputs to the generation call, so this has never been a problem there. It only matters when a human is pasting a prompt directly into a chat UI (e.g. ChatGPT web) instead of running the script --- in that case, every reference this section lists (Master Model Sheet(s), environment reference, and now optionally the brand icon file) must be physically attached/uploaded to that generation turn every time. Mentioning the path in words is silently ignored, not enforced.
 
+**Superseded (2026-08-11, S00E03):** the two-reference pattern above worked once (S00E02 P02.1) but the project owner reconfirmed on S00E03 P03 that it is not the standing rule --- the Master Model Sheet alone remains the default single Brooks reference, matching this document's own "Draft Round 4/5" and "Final resolution" findings further up. When the icon drifts, fix it by strengthening the prompt's text description first, not by adding the brand-asset file back in. See `01-Characters/Brooks/Assets/References/Audits/Brooks-Visual-Canon-Audit-v1.0.md`, "Standing Rule Reconfirmed."
+
 See `13-Episodes/Season-00-Pilots/S00E02-Why-Does-the-Ground-Need-to-Breathe/03-Codex-Draft-Generation-Brief.md` ("REFERENCE_ROLES", "BROOKS_LOCK") for this pattern applied, and `01-Characters/Brooks/11-Negative-Prompt.md` for the character-side failure-mode entry.
 
 ---
