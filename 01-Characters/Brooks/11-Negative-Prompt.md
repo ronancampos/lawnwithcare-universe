@@ -3,11 +3,11 @@ title: Brooks Negative Prompt
 character: Brooks
 universe: Lawn With Care Universe
 document: Negative Prompt
-version: 1.0.0
+version: 1.1.0
 status: CONTROLLED
 author: Ronan Campos
 creative_direction: OpenAI ChatGPT
-last_update: 2026-08-10
+last_update: 2026-08-11
 ---
 
 # Brooks
@@ -25,9 +25,11 @@ This is a production tool, not canon. If a rule here and `14-Canon.md` / `15-Des
 ## Do Not Generate
 
 - Military, tactical, police, cowboy or superhero styling.
-- Beard or added hairstyle. Brooks' face canon requires "no visible hairstyle when hat is worn" (Visual Canon Audit, Face: APPROVED).
+- Beard, mustache, stubble or added hairstyle. Brooks' face canon requires "no visible hairstyle when hat is worn" (Visual Canon Audit, Face: APPROVED).
+- Freckles on Brooks — freckles are Sprout's trait (`Sprout/11-Negative-Prompt.md`), never his; a shared reference-image context can bleed this across characters.
+- A necktie or any neckwear — not part of the approved wardrobe (`06-Wardrobe.md`); has appeared as an AI invention when the jacket is described without explicitly ruling it out.
 - Circular replacement badge or generic ranger badge.
-- Invented Brooks insignia, or an additional maple-leaf chest pin — explicitly marked `NOT CANON` in the Visual Canon Audit.
+- Invented Brooks insignia, or an additional maple-leaf chest pin — explicitly marked `NOT CANON` in the Visual Canon Audit. This includes the "Pin – Maple Leaf (Right Chest)" shown on `Assets/Icons/Brooks-Insignia-Icons-Sheet-v1.0.png`: that sheet was never corrected after the audit rejected the pin, so do not treat it as a generation reference.
 - Extra Lawn With Care leaves, or a redrawn/reconstructed Lawn With Care logo.
 - Authoritarian posture: standing over a child, lecture pose, finger-wagging.
 - Brooks pointing directly at a clue before the child protagonist has found it.
@@ -39,7 +41,7 @@ This is a production tool, not canon. If a rule here and `14-Canon.md` / `15-Des
 
 (from the Visual Canon Audit)
 
-**Logo drift** — leaf count, frame geometry, typography, spacing, colors.
+**Logo drift** — leaf count, frame geometry, typography, spacing, colors. **Suspected root cause (found 2026-08-11, S00E02 production):** prompts wrote this mark as literal `[L]` text. Square brackets around a letter read to the model as a design instruction — "draw a bracketed L" — rather than as shorthand for the official icon asset (a leaf shape above a serif L inside an open-top frame; see `00-Franchise/Brand/Logos/04-icon-dark.png`). Always spell out "the official Lawn With Care icon" in prose instead of typing `[L]`, and describe its actual construction. See `13-Episodes/Season-00-Pilots/S00E02-Why-Does-the-Ground-Need-to-Breathe/03-Codex-Draft-Generation-Brief.md` ("Icon wording fix") for the corrected phrasing this produced.
 
 **Badge drift** — shield shape, circular badge, text, maple-leaf size, border treatment.
 
@@ -54,7 +56,7 @@ This is a production tool, not canon. If a rule here and `14-Canon.md` / `15-Des
 - The scene/environment is inconsistent with the episode's locked environment reference.
 - Brooks leads or announces a discovery instead of the child protagonist.
 - Brooks' badges or wardrobe drift from the Master Model Sheet.
-- AI-generated text appears anywhere in the image.
+- AI-generated text appears anywhere in the image (except deliberate, legible educational labels inside a Discovery Frame diagram, e.g. soil-type callouts — approved exception, S00E02 P05, 2026-08-11; garbled or unintended text is still a reject).
 
 ---
 

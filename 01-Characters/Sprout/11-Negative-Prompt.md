@@ -3,11 +3,11 @@ title: Sprout Negative Prompt
 character: Sprout
 universe: Lawn With Care Universe
 document: Negative Prompt
-version: 1.0.0
+version: 1.1.0
 status: CONTROLLED
 author: Ronan Campos
 creative_direction: OpenAI ChatGPT
-last_update: 2026-08-10
+last_update: 2026-08-11
 ---
 
 # Sprout
@@ -30,6 +30,8 @@ This is a production tool, not canon. Sprout does not yet have a written `15-Des
 - A redesigned Discovery Band.
 - Invented additional badges without separate canon approval (per `14-Canon.md` — "Badge Rule": a generated badge is `NON-CANON / PROPOSED` until approved).
 - An oversized magnifying loupe that obscures her face.
+- A third arm or extra hand — found 2026-08-11 (S00E02 P06): when a pose needs both of Sprout's hands doing something else (soil, gesture), the generator invented a third arm rather than let go of the loupe. Fix: explicitly state the loupe hangs from its Discovery Band cord instead of being held whenever both hands are occupied.
+- A second, disconnected bare-soil patch elsewhere in the grass — the episode's environment reference establishes exactly one worn path; any other "bare ground" reads as an unintended second patch, not a valid healthy-soil touch point.
 - An exaggerated "detective" pose that breaks natural child posture.
 - Brooks holding her loupe, or Brooks discovering/pointing out a clue before she does.
 - Magical glow, sparkle or fantasy effects around anything she observes.
@@ -51,7 +53,7 @@ This is a production tool, not canon. Sprout does not yet have a written `15-Des
 - Sprout reads visually older or younger than canon.
 - Her clothing changes between panels within the same episode.
 - The scene/plant magically recovers or changes state around her without narrative cause.
-- AI-generated text appears anywhere in the image.
+- AI-generated text appears anywhere in the image (except deliberate, legible educational labels inside a Discovery Frame diagram, e.g. soil-type callouts — approved exception, S00E02 P05, 2026-08-11; garbled or unintended text is still a reject).
 
 ---
 

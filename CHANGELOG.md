@@ -2,6 +2,16 @@
 
 All notable changes to the Lawn With Care Universe repository. Reconstructed from commit history on 2026-08-10; maintain going forward per `AGENTS.md`'s commit-discipline rule (one conceptual change = one commit = one entry here).
 
+## 2026-08-11
+
+- Close out S00E02 production learnings: log that Brooks' freckle drift is intermittent rather than solved (`Brooks-Visual-Canon-Audit-v1.0.md`), resolve the icon-wording/reference-hierarchy finding as confirmed across the full 8-panel set, and add "crop before approving" plus "verify output filenames" as required review steps in both the S00E02 Codex brief and S00E01's cross-episode retrospective notes
+- Promote all 8 S00E02 panels to `Assets/Final/`; first definitive cut approved. P07's residual freckle imperfection logged as an accepted, documented exception in `07-Production-Checklist.md` (same precedent as S00E01's P03 badge-text finding)
+- Add Sprout "both-hands-occupied" rule to `SPROUT_LOCK` (S00E02 brief) and `01-Characters/Sprout/11-Negative-Prompt.md` after a P06 draft rendered a third arm holding the magnifying loupe instead of letting it hang from the Discovery Band
+- Fix S00E02 Codex Draft Generation Brief `BROOKS_LOCK` and all P02–P08 panel prompts: exclude tie/freckles/facial hair from Brooks, require the maple-leaf badge on the sleeve only (never the chest), and stop writing the Lawn With Care icon as literal `[L]` in generation-prompt text
+- Add "Reference Authority Hierarchy" pattern to `REFERENCE_ROLES` (S00E02 brief) and as a cross-episode addendum to S00E01's `08-Retrospective-Notes.md`: give each reference image one non-overlapping job instead of letting two references compete to define the same character
+- Log two new Brooks Visual Canon Audit findings: the Icons & Insignia Sheet's "maple-leaf chest pin" panel contradicts the already-rejected `NOT CANON` decision and was never corrected on the source asset; the `[L]` bracket-notation fix is tentatively confirmed on one panel (S00E02 P02.1), pending confirmation across the full panel set
+- Add corresponding failure-mode entries to `01-Characters/Brooks/11-Negative-Prompt.md` (tie, Brooks freckles, `[L]` bracket notation, Icons Sheet chest pin)
+
 ## 2026-08-10
 
 - Restore `Storytelling-DNA.md`, which had been accidentally overwritten in the working tree with Agent Operating Manual content

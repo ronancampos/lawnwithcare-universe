@@ -603,8 +603,52 @@ See `13-Episodes/Season-00-Pilots/S00E01-Why-Is-It-Sleeping-So-Long/08-Retrospec
 
 ---
 
+---
+
+# Open Finding — S00E02 P02, Chest Pin Contradiction Between Sheets (2026-08-11)
+
+Logged during review of `13-Episodes/Season-00-Pilots/S00E02-Why-Does-the-Ground-Need-to-Breathe/Assets/Drafts/S00E02-p02.png` (first draft).
+
+**Issue:** the draft rendered a maple-leaf mark clustered on Brooks' chest alongside the `[L]` icon, rather than on the sleeve.
+
+**Root cause found:** `Assets/Icons/Brooks-Insignia-Icons-Sheet-v1.0.png` — an asset already in this repository — contains a panel labeled "PIN – MAPLE LEAF (RIGHT CHEST)" that depicts exactly this mark. This is the same element the "Maple Leaf Chest Pin" entry above already rejected as `NOT CANON`, but the Icons & Insignia Sheet file itself was never corrected to remove it after that decision. The Icons Sheet and the Master Model Sheet therefore actively disagree with each other on this point.
+
+**Disposition:** `PARTIALLY RESOLVED.` Regenerating with the Master Model Sheet as the sole Brooks reference (no Icons Sheet) and explicit prompt language forbidding a second chest mark produced a corrected result (`S00E02-p02.1.png`) with the icon on the chest and the shield-shaped Yard Ranger badge cleanly on the sleeve. This is a prompt-level and reference-selection workaround, not a fix to the underlying contradiction — the Icons & Insignia Sheet asset itself still shows the deprecated pin and should be corrected or annotated `DEPRECATED` before it is used as a reference again for any purpose.
+
+---
+
+# Open Finding — S00E02 P02, `[L]` Bracket Notation and Reference Authority Hierarchy (2026-08-11)
+
+**Issue:** prior prompts (S00E01 and early S00E02 drafts) wrote the Lawn With Care icon as literal `[L]` inside generation-prompt text. Suspected to read as a design instruction ("draw a letter L in brackets") rather than shorthand for the approved icon asset — a plausible contributing cause to the "Logo drift" failure mode tracked above (frame geometry, leaf count, letterform).
+
+**Fix tested:** `S00E02-p02.1.png` was generated with (a) prompt text that always spells out "the official Lawn With Care icon" instead of `[L]`, and (b) `00-Franchise/Brand/Logos/04-icon-dark.png` attached as an *additional* reference scoped narrowly to "this reference governs the icon's exact geometry only, not Brooks' identity" — distinct from the Master Model Sheet's role (identity/proportions/placement). Result passed review.
+
+**Relationship to the earlier, opposite finding:** the "Corrected resolution path" note above (2026-08-10) tried supplying the brand icon file during S00E01 and found it competed with the Master Model Sheet, producing inconsistent results, so the final S00E01 resolution was to drop it and use the Master Model Sheet alone. This is not a contradiction of that finding — S00E01 gave the two references overlapping, undivided jobs (both implicitly defining "the whole character"); S00E02 gave them non-overlapping jobs (one owns identity, the other owns only the mark's geometry) plus explicit prompt language to keep them from competing. Both data points are consistent with the same underlying rule: competing references cause drift, non-competing references do not.
+
+**Disposition:** `RESOLVED — CONFIRMED ACROSS THE FULL S00E02 PANEL SET (P02.1–P08).` Icon frame/chest/sleeve placement matched the Master Model Sheet cleanly on every one of the 8 promoted panels. Adopt this as the standard method (spelled-out icon wording plus, optionally, the brand icon file scoped to geometry-only) for S00E03 onward. See `13-Episodes/Season-00-Pilots/S00E01-Why-Is-It-Sleeping-So-Long/08-Retrospective-Notes.md` ("Reference Authority Hierarchy" addendum) for the cross-episode version of this rule, and `13-Episodes/Season-00-Pilots/S00E02-Why-Does-the-Ground-Need-to-Breathe/03-Codex-Draft-Generation-Brief.md` for the applied prompt language.
+
+---
+
+# Open Finding — S00E02, Freckles on Brooks Are Intermittent, Not Solved (2026-08-11)
+
+**Issue:** the "no freckles" wording fix (added after `S00E02-p02.png`'s first draft) is not a reliable guarantee. Track record across the full episode:
+
+| Panel | Freckles present? |
+|---|---|
+| P02 (original) | Yes — first occurrence, prompted the fix |
+| P02.1–P06 (5 panels) | No |
+| P07 (original) | Yes, despite the standard fix wording |
+| P07.1 (regenerated with stronger wording) | Yes, fainter, but still present |
+| P08 | No, using wording no stronger than the P07 attempts that failed |
+
+**Reading:** this looks like generation-to-generation stochastic variance rather than something the prompt wording reliably controls. The same wording produced a clean result most of the time and a flawed one twice in a row, then a clean result again with no wording change. Stronger wording did not clearly outperform standard wording (P07.1 vs. P08).
+
+**Disposition:** `OPEN — ACCEPTED AS A KNOWN RISK, NOT RESOLVED.` `S00E02-P07.1.png` was promoted to `Assets/Final/` with this flaw as a documented, owner-approved exception (see `13-Episodes/Season-00-Pilots/S00E02-Why-Does-the-Ground-Need-to-Breathe/07-Production-Checklist.md`) rather than pursued to a guaranteed fix. For S00E03 onward: budget for this by reviewing Brooks' face at close crop on every panel (see the Codex brief's "After Generation — Review" section), not just the panels that seem highest-risk, and treat a clean result as something to verify per-panel rather than something the wording fix locks in permanently.
+
+---
+
 Status:
 
 `AUDIT COMPLETE — BROOKS PRODUCTION READY v1.0`
 
-`ONE OPEN FINDING PENDING — SEE ABOVE (2026-08-10, hair/hat) — LOGO/BADGE FINDING RESOLVED (2026-08-10, ROUND 6): all panels now match the Master Model Sheet consistently`
+`ONE OPEN FINDING PENDING (2026-08-10, hair/hat) — ICONS SHEET CHEST-PIN CONTRADICTION LOGGED 2026-08-11, WORKAROUND APPLIED, SOURCE ASSET NOT YET CORRECTED — LOGO/BADGE PLACEMENT RESOLVED (2026-08-10, ROUND 6) — ICON WORDING/REFERENCE-HIERARCHY FIX RESOLVED, CONFIRMED ACROSS FULL S00E02 SET (2026-08-11) — FRECKLE INTERMITTENCY OPEN AND ACCEPTED AS A KNOWN RISK (2026-08-11), NOT A SOLVED PROBLEM`

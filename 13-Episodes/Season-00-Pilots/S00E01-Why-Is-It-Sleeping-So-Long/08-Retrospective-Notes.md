@@ -425,4 +425,36 @@ improve the *next* episode's production speed.
 
 ---
 
+## Addendum (2026-08-11) --- Reference Authority Hierarchy
+
+Found during S00E02 production (`03-Codex-Draft-Generation-Brief.md`, P02), while chasing a recurring Brooks insignia problem (tie invented, freckles bled over from Sprout, maple-leaf badge duplicated onto the chest). Recorded here because it is a structural rule for every future episode's reference/prompt setup, not just this one panel.
+
+**Finding:** the strongest results came from giving each reference image one job instead of asking it to prove everything at once:
+
+- `*-Master-Model-Sheet-v1.0.png` --- governs character identity: face, proportions, silhouette, wardrobe, and *placement* of marks (which panel of the uniform they sit on).
+- `00-Franchise/Brand/Logos/04-icon-dark.png` (or `05-icon-light.png`) --- governs the official `[L]` icon's *exact geometry* only (open-top frame, single two-lobed leaf, serif letter), which the Master Model Sheet itself only approximates.
+- Prompt text --- governs pose, composition, and narrative only. It should not try to carry the full visual definition of a brand mark in words.
+
+This is a refinement of, not a reversal of, the S00E01 finding under "Reference Roles" below (Test 07): giving the model two *competing* full references for the same character caused drift; giving it two references that each own a clearly different, non-overlapping aspect of the same character did not.
+
+**Wording fix that made this reliable:** earlier prompts (S00E01 and early S00E02 drafts) wrote the icon as literal `[L]` in the generation prompt text. Square brackets around a letter read to the model as a literal design instruction rather than shorthand for the approved icon asset, which is the likely root cause of the "Logo drift" failure mode tracked in `Brooks-Visual-Canon-Audit-v1.0.md`. `[L]` remains fine as informal shorthand in conversation and internal documentation, but generation-prompt text must spell out "the official Lawn With Care icon" and describe its actual construction instead.
+
+**Operational caveat (do not skip this when generating by hand in a chat UI):** naming a reference file's path in the prompt text does not cause an image generator to see that file. This repository's scripted pipeline (`05-AI/Scripts/generate_image.py` / `preflight_check.py --ref ...`) already attaches reference images as real inputs to the generation call, so this has never been a problem there. It only matters when a human is pasting a prompt directly into a chat UI (e.g. ChatGPT web) instead of running the script --- in that case, every reference this section lists (Master Model Sheet(s), environment reference, and now optionally the brand icon file) must be physically attached/uploaded to that generation turn every time. Mentioning the path in words is silently ignored, not enforced.
+
+See `13-Episodes/Season-00-Pilots/S00E02-Why-Does-the-Ground-Need-to-Breathe/03-Codex-Draft-Generation-Brief.md` ("REFERENCE_ROLES", "BROOKS_LOCK") for this pattern applied, and `01-Characters/Brooks/11-Negative-Prompt.md` for the character-side failure-mode entry.
+
+---
+
+## Addendum (2026-08-11) --- Crop Before Approving, and Two Other S00E02 Production Lessons
+
+Found across full S00E02 production (all 8 panels). Recorded here, not just in S00E02's own documents, because all three apply to every future episode's review pass, not just this one.
+
+**1. Full-panel viewing at normal size misses real defects that a close crop catches.** Two genuine bugs in S00E02 were invisible on first look at the full 4:5 panel and only became clear after cropping the specific region with `05-AI/Scripts/crop_image.py`: a third arm/extra hand on Sprout (holding the magnifying loupe while both her actual hands were already occupied), and faint freckles on Brooks' face. Going forward, treat cropping Brooks' face and both characters' hands as a required step of the review pass, not something to reach for only when a problem is already suspected.
+
+**2. A wording fix that works most of the time is not a wording fix that always works.** The "no freckles" instruction for Brooks held clean for 5 consecutive panels, then failed twice in a row even with progressively stronger wording, then held clean again with no wording change from the failed attempts. Treat this kind of fix as reducing failure rate, not eliminating it --- keep reviewing every panel rather than trusting a prompt-language fix to be permanent once it's worked a few times. See `01-Characters/Brooks/Assets/References/Audits/Brooks-Visual-Canon-Audit-v1.0.md` ("Freckles on Brooks Are Intermittent, Not Solved") for the full record.
+
+**3. When generating by hand in a long chat session, verify the saved filename matches the panel actually shown.** Several S00E02 panels came back saved one panel number ahead of what was actually pictured (e.g. a P06 regeneration saved as `P07.1.png`), apparently from the chat session's own turn-counting rather than the episode's panel numbering. The image content was correct each time; only the filename drifted. Check the picture against the panel brief before trusting the filename, especially several regenerations into a single panel.
+
+---
+
 Status: **FIRST DEFINITIVE CUT APPROVED --- v1.0 (all 8 panels promoted to Assets/Final/; pipeline overhaul complete; remaining items are deferred polish/tooling, not blockers)**
