@@ -4,12 +4,12 @@ depends_on:
 - 02-Story-Blueprint-and-Script.md
 document: Codex Draft Generation Brief
 episode: 04
-last_update: 2026-08-10
+last_update: 2026-08-11
 season: 00
 status: READY FOR EXECUTION (PROPOSED EPISODE — NOT YET CANON)
 title: S00E04 --- The Day Two Rangers Met
 universe: Lawn With Care Universe
-version: 1.0.0
+version: 1.1.0
 ---
 
 # S00E04 --- The Day Two Rangers Met
@@ -31,15 +31,28 @@ resulting artwork as more than a production test. **Mode:**
 
 ### REFERENCE_ROLES
 
+Each reference has exactly one job. Do not let two references compete
+to define the same thing --- see `S00E01/08-Retrospective-Notes.md`,
+"Reference Authority Hierarchy."
+
 | Reference file | Governs | Notes |
 |---|---|---|
-| `01-Characters/Brooks/Assets/Model-Sheets/Brooks-Master-Model-Sheet-v1.0.png` | Brooks | The only Brooks reference, unchanged from other episodes. |
-| `01-Characters/Sprout/Assets/Model-Sheets/Sprout-Master-Model-Sheet-v1.0.png` | Sprout's face/hair/proportions only | Ignore the "Size Comparison" panel (112 cm defect). **Do not copy the loupe or Discovery Band from this reference in P01--P06** --- see SPROUT_LOCK below; they are added back only from P07 onward. |
-| `13-Episodes/Season-00-Pilots/S00E04-The-Day-Two-Rangers-Met/Assets/References/S00E04-Environment-Reference-v1.0.png` | Front yard / flower bed layout | Generate first (Step 0). |
+| `01-Characters/Brooks/Assets/Model-Sheets/Brooks-Master-Model-Sheet-v1.0.png` | Brooks | The only Brooks reference, unchanged from other episodes. Required. |
+| `01-Characters/Sprout/Assets/Model-Sheets/Sprout-Master-Model-Sheet-v1.0.png` | Sprout's face/hair/proportions only | Ignore the "Size Comparison" panel (112 cm defect). **Do not copy the loupe or Discovery Band from this reference in P01--P06** --- see SPROUT_LOCK below; they are added back only from P07 onward. Required. |
+| `13-Episodes/Season-00-Pilots/S00E04-The-Day-Two-Rangers-Met/Assets/References/S00E04-Environment-Reference-v1.0.png` | Front yard / flower bed layout | Generate first (Step 0). Required. |
 
-**Do not use:** the Relationship Scale Sheet or the official brand
-logo file as generation references (same rule as every other
-episode).
+**Do not use:** the Relationship Scale Sheet, the official brand logo
+file (`00-Franchise/Brand/Logos/`), or the Brooks Insignia & Icons
+Sheet (`01-Characters/Brooks/Assets/Icons/`) --- the Master Model
+Sheet is the only Brooks reference, full stop (reconfirmed
+2026-08-11, S00E03); the Icons Sheet depicts a maple-leaf chest pin
+the Visual Canon Audit already rejected as `NOT CANON`.
+
+**If generating by hand in a chat UI:** every "Required" reference
+above must be physically attached/uploaded to that generation turn ---
+naming the file path in the prompt text does not make the generator
+see it. Also verify the saved output filename matches the panel
+actually shown before trusting it.
 
 ### STYLE_AND_LIGHT_LOCK
 
@@ -51,18 +64,35 @@ anime, no manga, no generic 3D redesign.
 
 ### BROOKS_LOCK
 
-Identical to S00E01--S00E03 --- unchanged.
+Same identity as S00E01--S00E03, updated with the production fixes
+found across those episodes (tie/freckle exclusions, spelled-out icon
+wording, the proven icon-construction phrasing from S00E03).
 
 RANGER BROOKS: adult male naturalist mentor, calm warm expression,
-bald under his hat with no visible hair and no beard, approximately
-188 cm tall, rounded approachable proportions. Forest-green ranger
-jacket, campaign hat (forest green, gold band), dark outdoor boots.
-Match `Brooks-Master-Model-Sheet-v1.0.png` faithfully, including its
-marks: the Lawn With Care `[L]` icon centered on the hat front above
-the gold band, a second `[L]` icon on his own anatomical left chest,
-and the Yard Ranger Canada maple-leaf badge on his own anatomical left
-sleeve if visible. Each mark exactly once, never mirrored or
-duplicated. No name tag. **This episode:** in the closing panels he
+approximately 188 cm tall, rounded approachable proportions. Bald
+under his hat: no visible hair, no beard, no mustache, no stubble, no
+freckles (freckles are Sprout's trait only), clean skin. Forest-green
+ranger jacket over a plain collared shirt (no tie, no neckwear),
+campaign hat (forest green, gold band), dark outdoor boots.
+
+Match `Brooks-Master-Model-Sheet-v1.0.png` faithfully for face,
+proportions, uniform, and where each mark sits. Exactly three marks
+total, nowhere else:
+
+1. The official Lawn With Care icon (a three-line open-top frame in
+   GREEN --- left, right, and bottom edges only, no top line --- with a
+   green two-lobed leaf plugging the open top gap, and a bold WHITE
+   letter L centered below it; never gold, never a closed four-sided
+   square) on the hat front above the gold band.
+2. The same icon, once more, on his own anatomical left chest only ---
+   no second chest mark, no pin, no additional badge on the chest or
+   torso.
+3. The Yard Ranger Canada badge (shield shape, white/light field, red
+   maple leaf, restrained dark-green border, small "YARD" wordmark) on
+   his own anatomical left sleeve only --- never the chest.
+
+Each mark exactly once, never mirrored, duplicated, resized, or
+relocated. No name tag. **This episode:** in the closing panels he
 extends a small magnifying loupe toward Sprout --- otherwise
 unchanged.
 
@@ -83,6 +113,13 @@ faithfully **except**:
   small handheld magnifying glass, simple design, no ornamentation).
   Still no Discovery Band --- that begins after this episode, not
   during it.
+
+Exactly two arms and two hands, normal human anatomy --- never a third
+arm or extra hand. Whenever a panel needs both of Sprout's hands doing
+something other than holding a prop, any prop not currently in use
+must be explicitly set down rather than left ambiguously "holdable" ---
+a generator asked to keep a prop in-hand while both hands are occupied
+elsewhere has invented a third arm to do it before (`S00E02-P06`).
 
 ### RELATIONSHIP_LOCK
 
@@ -153,11 +190,11 @@ No characters. No text. No labels. No logo. This is a production continuity refe
 ```text
 Portrait children's educational storybook illustration for the Lawn With Care Universe, 4:5 aspect ratio, full-bleed, no border. Bright, clean-outline, flat-to-soft-cel storybook style. Soft, warm, early-morning low-angle light. No photorealism, no anime, no manga, no generic 3D redesign.
 
-A wide establishing shot of a quiet residential front yard, early morning. SPROUT (curious 9-year-old girl, approximately 130-135 cm tall, golden curly blonde hair, light-green eyes, light freckles, green fabric headband, cream short-sleeve field shirt, olive-green shorts, brown outdoor boots, matching Sprout-Master-Model-Sheet-v1.0.png's face, hair, and outfit faithfully -- NO magnifying loupe, NO Discovery Band, she doesn't have them yet in this story) stands alone at the edge of the yard, looking uncertainly toward a small flower bed nearby, matching the supplied environment reference. In the far distance down the sidewalk, RANGER BROOKS (adult male naturalist mentor, bald under his hat, forest-green ranger uniform, campaign hat, matching Brooks-Master-Model-Sheet-v1.0.png faithfully including his hat and chest [L] icons) is visible approaching, small in the frame, not yet close enough to interact.
+A wide establishing shot of a quiet residential front yard, early morning. SPROUT (curious 9-year-old girl, approximately 130-135 cm tall, golden curly blonde hair, light-green eyes, light freckles, green fabric headband, cream short-sleeve field shirt, olive-green shorts, brown outdoor boots, matching Sprout-Master-Model-Sheet-v1.0.png's face, hair, and outfit faithfully -- NO magnifying loupe, NO Discovery Band, she doesn't have them yet in this story) stands alone at the edge of the yard, looking uncertainly toward a small flower bed nearby, matching the supplied environment reference. In the far distance down the sidewalk, RANGER BROOKS (adult male naturalist mentor, bald under his hat, no beard, no tie, forest-green ranger uniform, campaign hat, matching Brooks-Master-Model-Sheet-v1.0.png faithfully including his hat and chest official Lawn With Care icons -- green open-top frame, green leaf, white letter L, never gold or closed) is visible approaching, small in the frame, not yet close enough to interact.
 
 Reserve clean negative space for a short caption in a simple hand-lettered banner style: "Before the Discovery Band. Before the loupe."
 
-Avoid: Sprout carrying a magnifying loupe or wearing a Discovery Band, Brooks already close/interacting, warm golden/sepia grading that looks like a different time of day than soft early morning, garbled text, more than one Sprout-like or Brooks-like figure.
+Avoid: Sprout carrying a magnifying loupe or wearing a Discovery Band, Brooks already close/interacting, warm golden/sepia grading that looks like a different time of day than soft early morning, garbled text, more than one Sprout-like or Brooks-like figure, Brooks wearing a tie, Brooks with freckles/facial hair/visible hair.
 ```
 
 **Output:** `Assets/Drafts/S00E04-P01-Draft.png`
@@ -189,7 +226,7 @@ Avoid: a magnifying loupe or Discovery Band appearing on Sprout, Brooks appearin
 ```text
 Portrait children's educational storybook illustration for the Lawn With Care Universe, 4:5 aspect ratio, full-bleed, no border, continuing directly from the previous panel with exact continuity. Bright, clean-outline, flat-to-soft-cel storybook style. No photorealism, no anime, no manga, no generic 3D redesign.
 
-RANGER BROOKS: adult male naturalist mentor, calm warm expression, bald under his hat, no beard, approximately 188 cm tall. Forest-green ranger jacket, campaign hat, dark outdoor boots, notebook and pencil. Match Brooks-Master-Model-Sheet-v1.0.png faithfully, including its marks: [L] icon on hat front above the gold band, second [L] icon on his own anatomical left chest, Yard Ranger maple-leaf badge only on his own anatomical left sleeve if visible. Each mark exactly once, no name tag.
+RANGER BROOKS: adult male naturalist mentor, calm warm expression, bald under his hat, no beard, no mustache, no stubble, no freckles, no tie, approximately 188 cm tall. Forest-green ranger jacket over a plain collared shirt, campaign hat, dark outdoor boots, notebook and pencil. Match Brooks-Master-Model-Sheet-v1.0.png faithfully, including its marks: the official Lawn With Care icon (a three-line open-top frame in GREEN -- left, right, and bottom edges only, no top line -- with a green two-lobed leaf plugging the open top gap, and a bold WHITE letter L centered below it; never gold, never a closed four-sided square) on the hat front above the gold band, the same icon once more on his own anatomical left chest only, Yard Ranger maple-leaf badge (shield shape, red maple leaf) only on his own anatomical left sleeve -- never the chest. Each mark exactly once, no name tag.
 
 SPROUT: curious 9-year-old girl, golden curly blonde hair, light-green eyes, freckles, green headband, cream field shirt, olive-green shorts, brown outdoor boots. NO magnifying loupe, NO Discovery Band yet.
 
@@ -197,7 +234,7 @@ Brooks kneels down beside Sprout at the flower bed, lowering himself fully to he
 
 Reserve clean negative space for a tailed speech bubble containing ONLY this two-line text, no speaker label: "I see it too. Good eye -- most people walk right past a flower like this without ever looking down." (spoken by Brooks).
 
-Avoid: Brooks standing over her rather than kneeling, a magnifying loupe or Discovery Band appearing on Sprout, warm golden/sepia grading, garbled text, a speaker name/colon inside the bubble, more than one Brooks-like or Sprout-like figure.
+Avoid: Brooks standing over her rather than kneeling, a magnifying loupe or Discovery Band appearing on Sprout, warm golden/sepia grading, garbled text, a speaker name/colon inside the bubble, more than one Brooks-like or Sprout-like figure, Brooks wearing a tie, Brooks with freckles/facial hair/visible hair, any mark on Brooks's chest besides the single official Lawn With Care icon, the maple-leaf badge appearing anywhere but the sleeve.
 ```
 
 **Output:** `Assets/Drafts/S00E04-P03-Draft.png`
@@ -229,7 +266,7 @@ Avoid: a magnifying loupe or Discovery Band appearing on Sprout, Brooks dominati
 ```text
 Portrait children's educational storybook illustration for the Lawn With Care Universe, 4:5 aspect ratio, full-bleed, no border, continuing with strict continuity. Bright, clean-outline, flat-to-soft-cel storybook style. No photorealism, no anime, no manga, no generic 3D redesign.
 
-RANGER BROOKS: bald under his hat, no beard, approximately 188 cm tall, notebook and pencil. Match Brooks-Master-Model-Sheet-v1.0.png faithfully, including its marks: [L] icon on hat front, second [L] on his own anatomical left chest, Yard Ranger badge only on his own anatomical left sleeve if visible. No name tag.
+RANGER BROOKS: bald under his hat, no beard, no mustache, no stubble, no freckles, no tie, approximately 188 cm tall, notebook and pencil. Match Brooks-Master-Model-Sheet-v1.0.png faithfully, including its marks: the official Lawn With Care icon (a three-line open-top frame in GREEN -- left, right, and bottom edges only, no top line -- with a green two-lobed leaf plugging the open top gap, and a bold WHITE letter L centered below it; never gold, never a closed four-sided square) on the hat front, the same icon once more on his own anatomical left chest only, Yard Ranger badge (shield shape, red maple leaf) only on his own anatomical left sleeve -- never the chest. No name tag.
 
 SPROUT: curious 9-year-old girl, golden curly blonde hair, light-green eyes, freckles, green headband, cream field shirt, olive-green shorts, brown outdoor boots. NO magnifying loupe, NO Discovery Band yet.
 
@@ -237,7 +274,7 @@ Medium shot: Brooks looking at Sprout with a gentle, moved expression, as if he'
 
 Reserve clean negative space for a tailed speech bubble containing ONLY this two-line text, no speaker label: "...That's exactly what a Ranger does. Noticing before it's too late -- that's the whole job." (spoken by Brooks).
 
-Avoid: a magnifying loupe or Discovery Band appearing on Sprout, warm golden/sepia grading, garbled text, a speaker name/colon inside the bubble, more than one Brooks-like or Sprout-like figure.
+Avoid: a magnifying loupe or Discovery Band appearing on Sprout, warm golden/sepia grading, garbled text, a speaker name/colon inside the bubble, more than one Brooks-like or Sprout-like figure, Brooks wearing a tie, Brooks with freckles/facial hair/visible hair, any mark on Brooks's chest besides the single official Lawn With Care icon, the maple-leaf badge appearing anywhere but the sleeve.
 ```
 
 **Output:** `Assets/Drafts/S00E04-P05-Draft.png`
@@ -250,7 +287,7 @@ Avoid: a magnifying loupe or Discovery Band appearing on Sprout, warm golden/sep
 ```text
 Portrait children's educational storybook illustration for the Lawn With Care Universe, 4:5 aspect ratio, full-bleed, no border, continuing with strict continuity -- same intimate framing as the previous panel, a beat later. Bright, clean-outline, flat-to-soft-cel storybook style. No photorealism, no anime, no manga, no generic 3D redesign.
 
-RANGER BROOKS: bald under his hat, no beard, approximately 188 cm tall. Match Brooks-Master-Model-Sheet-v1.0.png faithfully, including its marks: [L] icon on hat front, second [L] on his own anatomical left chest, Yard Ranger badge only on his own anatomical left sleeve if visible. No name tag.
+RANGER BROOKS: bald under his hat, no beard, no mustache, no stubble, no freckles, no tie, approximately 188 cm tall. Match Brooks-Master-Model-Sheet-v1.0.png faithfully, including its marks: the official Lawn With Care icon (a three-line open-top frame in GREEN -- left, right, and bottom edges only, no top line -- with a green two-lobed leaf plugging the open top gap, and a bold WHITE letter L centered below it; never gold, never a closed four-sided square) on the hat front, the same icon once more on his own anatomical left chest only, Yard Ranger badge (shield shape, red maple leaf) only on his own anatomical left sleeve -- never the chest. No name tag.
 
 SPROUT: curious 9-year-old girl, golden curly blonde hair, light-green eyes, freckles, green headband, cream field shirt, olive-green shorts, brown outdoor boots. NO magnifying loupe, NO Discovery Band yet.
 
@@ -258,7 +295,7 @@ Close two-shot, Brooks' expression softening further, warm and sincere. Sprout l
 
 Reserve clean negative space for a tailed speech bubble containing ONLY this text, no speaker label: "You already know how to do the hardest part." (spoken by Brooks).
 
-Avoid: a magnifying loupe or Discovery Band appearing on Sprout, warm golden/sepia grading, garbled text, a speaker name/colon inside the bubble, more than one Brooks-like or Sprout-like figure.
+Avoid: a magnifying loupe or Discovery Band appearing on Sprout, warm golden/sepia grading, garbled text, a speaker name/colon inside the bubble, more than one Brooks-like or Sprout-like figure, Brooks wearing a tie, Brooks with freckles/facial hair/visible hair, any mark on Brooks's chest besides the single official Lawn With Care icon, the maple-leaf badge appearing anywhere but the sleeve.
 ```
 
 **Output:** `Assets/Drafts/S00E04-P06-Draft.png`
@@ -271,7 +308,7 @@ Avoid: a magnifying loupe or Discovery Band appearing on Sprout, warm golden/sep
 ```text
 Portrait children's educational storybook illustration for the Lawn With Care Universe, 4:5 aspect ratio, full-bleed, no border -- the episode's symbolic gift moment. Bright, clean-outline, flat-to-soft-cel storybook style. No photorealism, no anime, no manga, no generic 3D redesign.
 
-RANGER BROOKS: bald under his hat, no beard, approximately 188 cm tall. Match Brooks-Master-Model-Sheet-v1.0.png faithfully, including its marks: [L] icon on hat front, second [L] on his own anatomical left chest, Yard Ranger badge only on his own anatomical left sleeve if visible. Notebook now closed, held at his side; his other hand extends a small, simple handheld magnifying glass toward Sprout. Warm, proud smile.
+RANGER BROOKS: bald under his hat, no beard, no mustache, no stubble, no freckles, no tie, approximately 188 cm tall. Match Brooks-Master-Model-Sheet-v1.0.png faithfully, including its marks: the official Lawn With Care icon (a three-line open-top frame in GREEN -- left, right, and bottom edges only, no top line -- with a green two-lobed leaf plugging the open top gap, and a bold WHITE letter L centered below it; never gold, never a closed four-sided square) on the hat front, the same icon once more on his own anatomical left chest only, Yard Ranger badge (shield shape, red maple leaf) only on his own anatomical left sleeve -- never the chest. Notebook now closed, held at his side; his other hand extends a small, simple handheld magnifying glass toward Sprout. Warm, proud smile.
 
 SPROUT: curious 9-year-old girl, golden curly blonde hair, light-green eyes, freckles, green headband, cream field shirt, olive-green shorts, brown outdoor boots. Still NO Discovery Band (that begins after this episode). Reaching up with both hands to receive the magnifying glass, bright delighted wide-eyed expression -- this is the first time she holds it.
 
@@ -279,7 +316,7 @@ Medium-wide shot, quiet front yard, warm morning light. Brooks handing Sprout th
 
 Reserve clean negative space for a tailed speech bubble containing ONLY this two-line text, no speaker label: "Every Ranger starts somewhere. Here -- start noticing with this." (spoken by Brooks).
 
-Avoid: Sprout already holding the loupe as if she's had it before, a Discovery Band appearing, warm golden/sepia grading, garbled text, a speaker name/colon inside the bubble, more than one Brooks-like or Sprout-like figure.
+Avoid: Sprout already holding the loupe as if she's had it before, a Discovery Band appearing, warm golden/sepia grading, garbled text, a speaker name/colon inside the bubble, more than one Brooks-like or Sprout-like figure, Brooks wearing a tie, Brooks with freckles/facial hair/visible hair, any mark on Brooks's chest besides the single official Lawn With Care icon, the maple-leaf badge appearing anywhere but the sleeve.
 ```
 
 **Output:** `Assets/Drafts/S00E04-P07-Draft.png`
@@ -292,7 +329,7 @@ Avoid: Sprout already holding the loupe as if she's had it before, a Discovery B
 ```text
 Portrait children's educational storybook illustration for the Lawn With Care Universe, 4:5 aspect ratio, full-bleed, no border -- the closing panel. Bright, clean-outline, flat-to-soft-cel storybook style. No photorealism, no anime, no manga, no generic 3D redesign.
 
-RANGER BROOKS: bald under his hat, no beard, approximately 188 cm tall. Match Brooks-Master-Model-Sheet-v1.0.png faithfully, including its marks: [L] icon on hat front, second [L] on his own anatomical left chest, Yard Ranger badge only on his own anatomical left sleeve if visible. Warm, settled smile.
+RANGER BROOKS: bald under his hat, no beard, no mustache, no stubble, no freckles, no tie, approximately 188 cm tall. Match Brooks-Master-Model-Sheet-v1.0.png faithfully, including its marks: the official Lawn With Care icon (a three-line open-top frame in GREEN -- left, right, and bottom edges only, no top line -- with a green two-lobed leaf plugging the open top gap, and a bold WHITE letter L centered below it; never gold, never a closed four-sided square) on the hat front, the same icon once more on his own anatomical left chest only, Yard Ranger badge (shield shape, red maple leaf) only on his own anatomical left sleeve -- never the chest. Warm, settled smile.
 
 SPROUT: curious 9-year-old girl, golden curly blonde hair, light-green eyes, freckles, green headband, cream field shirt, olive-green shorts, brown outdoor boots, now holding her new magnifying glass and looking through it at the flower bed for the first time -- delighted, focused. Still no Discovery Band.
 
@@ -300,7 +337,7 @@ Medium-wide shot, quiet front yard, warm settled morning light, calmer energy th
 
 Reserve generous clean negative space for a speech bubble plus a closing caption, visually distinct from each other: a tailed speech bubble containing ONLY the spoken line, no speaker label -- Sprout: "Let's find out what else I've been missing." -- and, styled as a separate banner/ribbon treatment: "EVERY RANGER STARTS BY NOTICING."
 
-Avoid: a Discovery Band appearing, warm golden/sepia grading, the caption styled identically to the speech bubble, a speaker name/colon inside the bubble, more than one Brooks-like or Sprout-like figure.
+Avoid: a Discovery Band appearing, warm golden/sepia grading, the caption styled identically to the speech bubble, a speaker name/colon inside the bubble, more than one Brooks-like or Sprout-like figure, Brooks wearing a tie, Brooks with freckles/facial hair/visible hair, any mark on Brooks's chest besides the single official Lawn With Care icon, the maple-leaf badge appearing anywhere but the sleeve.
 ```
 
 **Output:** `Assets/Drafts/S00E04-P08-Draft.png`
@@ -317,8 +354,15 @@ resulting artwork as canon-final --- flag for the owner's explicit
 approval per `README.md`, "Canon Status," before this episode's
 backstory is treated as official.
 
+**Crop before approving (carried over from S00E02/S00E03):**
+full-panel viewing at normal size has missed real defects in every
+episode so far --- a third-arm anatomy error, faint freckles on Brooks,
+and a wrong icon frame/color, all only visible on close crop. Use
+`05-AI/Scripts/crop_image.py` to zoom into Brooks' face, his hat/chest
+icons, and both characters' hands on every panel before approving.
+
 ---
 
 # Status
 
-**READY FOR EXECUTION --- v1.0 (PROPOSED EPISODE --- NOT YET CANON)**
+**READY FOR EXECUTION --- v1.1 (PROPOSED EPISODE --- NOT YET CANON; 2026-08-11: BROOKS_LOCK, SPROUT_LOCK, REFERENCE_ROLES and every panel updated to carry forward all S00E02/S00E03 production lessons before generation begins)**
