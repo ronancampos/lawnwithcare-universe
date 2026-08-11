@@ -14,7 +14,7 @@ last_update: 2026-08-11
 - [x] Draft assets generated (`Assets/Drafts/S00E03-P01` through `P08`)
 - [x] Draft assets reviewed against QA assertions
 - [x] Final assets approved and promoted to `Assets/Final/` --- **all 8 panels promoted 2026-08-11.**
-- [ ] Social assets prepared per `07-Marketing/01-Instagram-Guidelines.md`
+- [ ] Social assets prepared per `07-Marketing/01-Instagram-Guidelines.md` --- caption drafted (`Assets/Social/S00E03-Instagram-Caption.md`, status `DRAFT`); panel export/crop for the actual post still pending
 
 ## Promoted-to-Final Notes (2026-08-11)
 

@@ -4,8 +4,8 @@ document: Marketing
 status: APPROVED
 author: Ronan Campos
 creative_direction: OpenAI ChatGPT
-last_update: 2026-08-10
-version: 1.0.0
+last_update: 2026-08-11
+version: 1.1.0
 ---
 
 # Instagram Guidelines
@@ -212,6 +212,14 @@ above.
 ---
 
 ## Publishing Workflow
+
+**Standing rule (added 2026-08-11):** as soon as an episode's panels
+are promoted to `Assets/Final/`, draft the caption immediately using
+the formula below --- do not wait to be asked. Save it to
+`Assets/Social/S00EXX-Instagram-Caption.md` in that episode's own
+folder, status `DRAFT` until the project owner approves it. This is
+independent of exporting/cropping the panels themselves for the actual
+post, which can happen later.
 
 ```text
 Assets/Final/S00E01-P01.png ... P08.png  (approved per 07-Production-Checklist.md)
